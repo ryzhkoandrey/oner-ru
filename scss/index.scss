@@ -6,12 +6,13 @@
 @import 'global/reset';
 @import 'global/base';
 
-// blocks
+// classes
 
-@import 'blocks/none';
-@import 'blocks/no-scroll';
-@import 'blocks/container';
+@import 'classes/none';
+@import 'classes/no-scroll';
+@import 'classes/no-scroll-adaptive';
+@import 'classes/container';
 
-@import 'blocks/header';
-@import 'blocks/main';
-@import 'blocks/footer';
+@import 'classes/header';
+@import 'classes/main';
+@import 'classes/footer';
