@@ -1,3 +1,75 @@
 .header {
    z-index: 10;
+
+   &__top {}
+
+   // logo
+
+   &__logo {}
+
+   &__logo-img {}
+
+   // search
+
+   &__search {}
+
+   &__search-input {}
+
+   &__search-btn {}
+
+   &__search-btn-icon {}
+
+   // location
+
+   &__location {}
+
+   &__location-icon {}
+
+   &__location-text {}
+
+   // tel
+
+   &__tel {}
+
+   &__tel-icon {}
+
+   &__tel-link {}
+
+   // user
+
+   &__user {}
+
+   &__user-icon {}
+
+   &__user-link {}
+
+   &__bottom {}
+
+   // category
+
+   &__category {}
+
+   &__category-icon {}
+
+   &__category-text {}
+
+   // menu
+
+   &__menu {}
+
+   &__menu-list {}
+
+   &__menu-item {}
+
+   &__menu-link {}
+
+   // cart
+
+   &__cart {}
+
+   &__cart-icon {}
+
+   &__cart-text {}
+
+   &__cart-count {}
 }
