@@ -22,6 +22,18 @@
 
    &__logo {
       margin: 0 2px 0 0;
+      transition: all .2s;
+
+      &:hover {
+         opacity: .7;
+      }
+
+      &--index {
+
+         &:hover {
+            opacity: 1;
+         }
+      }
    }
 
    &__logo-img {}
@@ -44,9 +56,14 @@
       line-height: 1.25;
       color: #1b1d1f;
       background: #f4f5f6;
+      transition: all .2s;
 
       &::placeholder {
          color: #55556d;
+      }
+
+      &:focus {
+         border-color: #6b59cc;
       }
    }
 
@@ -82,6 +99,13 @@
       display: flex;
       align-items: center;
       gap: 8px;
+
+      &:hover {
+
+         .header__tel-text {
+            color: #6b59cc;
+         }
+      }
    }
 
    &__tel-icon {}
@@ -92,6 +116,7 @@
       font-size: 18px;
       line-height: 1.22222;
       color: #1b1d1f;
+      transition: all .2s;
    }
 
    // user
@@ -112,6 +137,13 @@
       line-height: 1.25;
       text-align: right;
       color: #1b1d1f;
+   }
+
+   &__user-link {
+
+      &:hover {
+         color: #6b59cc;
+      }
    }
 
    &__user-text {}
@@ -136,6 +168,10 @@
       align-items: center;
       gap: 10px;
       background: #6b59cc;
+
+      &:hover {
+         background: #523ad5;
+      }
    }
 
    &__category-icon {}
@@ -182,6 +218,17 @@
       align-items: center;
       gap: 10px;
       background: #f4f5f6;
+
+      &:hover {
+
+         .header__cart-text {
+            color: #6b59cc;
+         }
+
+         .header__cart-count {
+            background: #6b59cc;
+         }
+      }
    }
 
    &__cart-icon {}
@@ -191,6 +238,7 @@
       font-size: 16px;
       line-height: 1.375;
       color: #1b1d1f;
+      transition: all .2s;
    }
 
    &__cart-count {
@@ -206,5 +254,6 @@
       line-height: 1;
       color: #fff;
       background: #fb6019;
+      transition: all .2s;
    }
 }
