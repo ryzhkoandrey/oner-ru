@@ -75,9 +75,13 @@ textarea {
    background-color: transparent;
 }
 
+input,
+textarea {
+   width: 100%;
+}
+
 textarea {
    resize: none;
-   width: 100%;
 }
 
 button,
