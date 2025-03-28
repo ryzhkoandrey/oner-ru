@@ -1,7 +1,18 @@
 .header {
    z-index: 10;
 
-   &__top {}
+   // top
+
+   &__top {
+      border-bottom: 1px solid #e3e3e8;
+      padding: 13px 0;
+   }
+
+   &__top-inner {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+   }
 
    // logo
 
@@ -43,7 +54,11 @@
 
    &__user-link {}
 
+   // bottom
+
    &__bottom {}
+
+   &__bottom-inner {}
 
    // category
 
