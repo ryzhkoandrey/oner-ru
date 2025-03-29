@@ -1,28 +1,26 @@
 .all-category {
-   z-index: 100;
+   z-index: 30;
    position: fixed;
    top: 0;
    left: 0;
-   width: 100vw;
-   height: 100vh;
+   right: 0;
+   bottom: 0;
+   overflow-y: auto;
+   background: #1b1d1f;
 
    &__overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #1b1d1f;
       opacity: 0.6;
    }
 
    &__content {
-      position: relative;
-      z-index: 101;
+      position: absolute;
+      top: 140px;
+      width: 100%;
    }
 
    &__inner {
       border: 1px solid #f6f8fb;
+      height: 280px;
       border-radius: 10px;
       box-shadow: 0 5px 20px 0 rgba(33, 34, 46, .15);
       background: #fff;
