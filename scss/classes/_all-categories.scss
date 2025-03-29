@@ -1,5 +1,4 @@
 .all-categories {
-   display: none;
    z-index: 30;
    position: fixed;
    top: 0;
@@ -7,12 +6,13 @@
    right: 0;
    bottom: 0;
    overflow-y: auto;
-   background: #1b1d1f;
+   background: rgba(27, 29, 31, .6);
 
-   &__content {
+   &__container {
       position: absolute;
       top: 140px;
-      width: 100%;
+      right: 0;
+      left: 0;
    }
 
    &__inner {
