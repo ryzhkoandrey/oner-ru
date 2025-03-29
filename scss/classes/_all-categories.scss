@@ -1,4 +1,7 @@
 .all-categories {
+   pointer-events: none;
+   visibility: hidden;
+   opacity: 0;
    z-index: 30;
    position: fixed;
    top: 0;
@@ -7,12 +10,27 @@
    bottom: 0;
    overflow-y: auto;
    background: rgba(27, 29, 31, .6);
+   transition: all .2s;
+
+
+   &--active {
+      pointer-events: all;
+      visibility: visible;
+      opacity: 1;
+
+      .all-categories__container {
+         top: 170px;
+      }
+   }
 
    &__container {
       position: absolute;
-      top: 140px;
+      top: 0;
       right: 0;
       left: 0;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      transition: all .2s;
    }
 
    &__inner {
@@ -71,4 +89,47 @@
    &__banner-img {
       border-radius: 10px;
    }
+}
+
+.header {
+
+   &--active {
+
+      @include mobile {
+         position: fixed;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         overflow-y: auto;
+      }
+   }
+
+   &__menu {
+
+      @include mobile {
+         pointer-events: none;
+         visibility: hidden;
+         position: absolute;
+         top: 0;
+         left: -120%;
+         width: 100%;
+         transition: all .2s;
+      }
+
+      &--active {
+
+         @include mobile {
+            pointer-events: all;
+            visibility: visible;
+            left: 0;
+         }
+      }
+   }
+
+   &__menu-list {}
+
+   &__menu-item {}
+
+   &__menu-link {}
 }
