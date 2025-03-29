@@ -158,9 +158,9 @@
       gap: 20px;
    }
 
-   // category
+   // categories
 
-   &__category {
+   &__categories {
       border-radius: 8px;
       padding: 11px 20px;
       display: flex;
@@ -173,9 +173,9 @@
       }
    }
 
-   &__category-icon {}
+   &__categories-icon {}
 
-   &__category-text {
+   &__categories-text {
       transform: translateY(1px);
       font-weight: 600;
       font-size: 16px;
