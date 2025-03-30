@@ -5,21 +5,53 @@
 
    &__img {
       border-radius: 30px;
+      background: #fff;
    }
 
-   &__btns {}
+   &__btns {
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      transform: translateY(-50%);
+   }
 
-   &__btns-inner {}
+   &__btns-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
 
-   &__btn {}
+   &__btn {
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px 0 rgba(46, 16, 102, 0.25);
+      background: #fff;
 
-   &__btn--prev {}
+      &--prev {
+         transform: translateX(-50%);
+      }
+
+      &--next {
+         transform: translateX(50%);
+      }
+
+   }
 
    &__btn-icon {}
 
-   &__btn--next {}
-
-   &__pagination {}
+   &__pagination {
+      z-index: 1;
+      position: absolute;
+      right: 0;
+      bottom: 60px;
+      left: 0;
+   }
 
    &__pagination-inner {}
 }

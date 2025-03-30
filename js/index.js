@@ -10,6 +10,8 @@ if (typeof Swiper !== 'undefined' && slider) {
    const sliderSwiper = new Swiper(slider, {
       slidesPerView: 1,
       spaceBetween: 30,
+      loop: true,
+      speed: 500,
 
       navigation: {
          prevEl: '[data-slider-prev]',
