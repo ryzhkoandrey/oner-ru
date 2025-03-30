@@ -1,0 +1,21 @@
+.products {
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+   }
+
+   &__more {}
+
+   &__more-text {}
+
+   &__more-icon {}
+
+   &__body {}
+
+   &__list {}
+
+   &__banner {}
+}
