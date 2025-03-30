@@ -1,0 +1,25 @@
+.slider {
+   padding: 30px 0 40px;
+
+   &__slide {}
+
+   &__img {
+      border-radius: 30px;
+   }
+
+   &__btns {}
+
+   &__btns-inner {}
+
+   &__btn {}
+
+   &__btn--prev {}
+
+   &__btn-icon {}
+
+   &__btn--next {}
+
+   &__pagination {}
+
+   &__pagination-inner {}
+}
