@@ -1,7 +1,4 @@
 .all-categories {
-   pointer-events: none;
-   visibility: hidden;
-   opacity: 0;
    z-index: 30;
    position: fixed;
    top: 0;
@@ -11,6 +8,10 @@
    overflow-y: auto;
    background: rgba(27, 29, 31, .6);
    transition: all .2s;
+
+   pointer-events: none;
+   visibility: hidden;
+   opacity: 0;
 
 
    &--active {
