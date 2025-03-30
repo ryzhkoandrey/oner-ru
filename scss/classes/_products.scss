@@ -15,14 +15,15 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
+      background: #f4f5f6;
+   }
+
+   &__more-text {
       font-family: "Stolzl", sans-serif;
       font-size: 14px;
       line-height: 1.42857;
       color: #5946d7;
-      background: #f4f5f6;
    }
-
-   &__more-text {}
 
    &__more-icon {}
 
@@ -34,5 +35,16 @@
       gap: 20px;
    }
 
-   &__banner {}
+   &__banner {
+
+      &:hover {
+         opacity: .9;
+         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .07);
+      }
+   }
+
+   &__banner-img {
+      border-radius: 10px;
+      background: #fafafd;
+   }
 }
