@@ -21,8 +21,22 @@
       min-height: 100px;
       background: #fff;
 
+      &:hover {
+         z-index: 1;
+         padding-left: 90px;
+         box-shadow: 0 5px 20px 0 rgba(42, 38, 49, 0.15);
+
+         .categories__title {
+            color: #5946d7;
+         }
+
+         .categories__title--more {
+            color: #fff;
+         }
+      }
+
       &--more {
-         padding: 26px 26px 26px 108px;
+         padding-left: 108px;
          display: flex;
          align-items: center;
          background: #6d5998 url('../img/decor/categories-bg.jpg') no-repeat center / cover;
@@ -32,24 +46,7 @@
          }
 
          &:hover {
-            opacity: 0.9;
-
-            .categories__arrow {
-               transform: translateX(5px);
-            }
-         }
-      }
-
-      &:hover {
-         z-index: 1;
-         box-shadow: 0 5px 20px 0 rgba(42, 38, 49, 0.15);
-
-         .categories__title {
-            color: #5946d7;
-         }
-
-         .categories__title--more {
-            color: #fff;
+            padding-left: 98px;
          }
       }
    }

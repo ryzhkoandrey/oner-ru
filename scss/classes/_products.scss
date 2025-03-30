@@ -1,13 +1,26 @@
 .products {
 
    &__header {
+      margin: 0 0 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 30px;
    }
 
-   &__more {}
+   &__more {
+      border-radius: 8px;
+      padding: 8px 10px 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-family: "Stolzl", sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #5946d7;
+      background: #f4f5f6;
+   }
 
    &__more-text {}
 
