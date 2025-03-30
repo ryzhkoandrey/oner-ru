@@ -1,7 +1,7 @@
 .products {
 
    &__header {
-      margin: 0 0 30px;
+      margin: 0 0 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -10,12 +10,18 @@
 
    &__more {
       border-radius: 8px;
-      padding: 8px 10px 8px 20px;
+      border: 1px solid transparent;
+      padding: 7px 10px 7px 20px;
+      min-height: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
       background: #f4f5f6;
+
+      &:hover {
+         border-color: #5946D7;
+      }
    }
 
    &__more-text {

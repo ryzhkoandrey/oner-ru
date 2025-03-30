@@ -105,6 +105,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &:hover {
+         background: #5946D7;
+
+         .product__buy-icon {
+
+            path {
+               stroke: #fff;
+            }
+         }
+      }
    }
 
    &__buy-icon {}
