@@ -40,7 +40,9 @@
 
    // body
 
-   &__body {}
+   &__body {
+      position: relative;
+   }
 
    &__list {
       display: grid;
@@ -52,20 +54,27 @@
 
    &__slider {}
 
+   &__slider-wrapper {}
+
    &__arrows {
-      z-index: 1;
+      pointer-events: none;
+      z-index: 2;
       position: absolute;
       top: 50%;
       right: 0;
       left: 0;
       transform: translateY(-50%);
-      pointer-events: none;
-   }
-
-   &__arrows-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
+   }
+
+   &__arrow-prev {
+      transform: translateX(-50%);
+   }
+
+   &__arrow-next {
+      transform: translateX(50%);
    }
 
    // banner
@@ -81,5 +90,18 @@
    &__banner-img {
       border-radius: 10px;
       background: #fafafd;
+   }
+
+   // Swiper
+
+   .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+   }
+
+   .swiper-button-disabled {
+      pointer-events: none;
+      visibility: hidden;
    }
 }
