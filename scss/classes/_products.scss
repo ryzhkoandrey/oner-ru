@@ -50,7 +50,9 @@
 
    // slider
 
-   &__btns {
+   &__slider {}
+
+   &__arrows {
       z-index: 1;
       position: absolute;
       top: 50%;
@@ -60,38 +62,11 @@
       pointer-events: none;
    }
 
-   &__btns-inner {
+   &__arrows-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
    }
-
-   &__btn {
-      border-radius: 10px;
-      border: 1px solid transparent;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 10px 0 rgba(46, 16, 102, 0.25);
-      background: #fff;
-      pointer-events: all;
-
-      &:hover {
-         border-color: #5946D7;
-      }
-
-      &--prev {
-         transform: translateX(-50%);
-      }
-
-      &--next {
-         transform: translateX(50%);
-      }
-   }
-
-   &__btn-icon {}
 
    // banner
 
