@@ -36,16 +36,16 @@
       background: #fff;
       pointer-events: all;
 
+      &:hover {
+         border-color: #5946D7;
+      }
+
       &--prev {
          transform: translateX(-50%);
       }
 
       &--next {
          transform: translateX(50%);
-      }
-
-      &:hover {
-         border-color: #523ad5;
       }
    }
 

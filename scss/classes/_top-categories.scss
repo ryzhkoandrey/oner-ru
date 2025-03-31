@@ -1,0 +1,58 @@
+.top-categories {
+   padding: 0 0 60px;
+   background: #fff;
+
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+   }
+
+   &__item {
+      position: relative;
+      padding: 30px;
+      min-height: 250px;
+      background: #e8edfa;
+   }
+
+   &__item-image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+
+   &__item-info {
+      position: relative;
+   }
+
+   &__item-title {
+      margin: 0 0 20px;
+      max-width: 232px;
+      font-family: "Stolzl", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.33333;
+      color: #1b1d1f;
+   }
+
+   &__item-link {
+      border-radius: 8px;
+      padding: 8px 10px 8px 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #5946D7;
+
+      &:hover {
+         background: #6b59cc;
+      }
+   }
+
+   &__item-link-text {
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #fff;
+   }
+
+   &__item-link-icon {}
+}
