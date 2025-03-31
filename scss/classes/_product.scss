@@ -14,7 +14,8 @@
    }
 
    &__header {
-      padding: 30px 30px 15px;
+      padding: 30px 15px 15px;
+      min-height: 265px;
       display: flex;
       align-items: center;
       justify-content: center;
