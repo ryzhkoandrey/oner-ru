@@ -4,11 +4,15 @@
    // header
 
    &__header {
-      margin: 0 0 30px;
+      margin: 0 0 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 30px;
+
+      &--more {
+         margin: 0 0 18px;
+      }
    }
 
    // more
@@ -52,7 +56,9 @@
 
    // slider
 
-   &__slider {}
+   &__slider {
+      margin: 0 -20px;
+   }
 
    &__slider-wrapper {}
 
@@ -93,6 +99,10 @@
    }
 
    // Swiper
+
+   .swiper {
+      padding: 20px;
+   }
 
    .swiper-slide {
       display: flex;
