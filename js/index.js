@@ -47,3 +47,24 @@ if (typeof Swiper !== 'undefined' && recommended) {
 } else {
    console.error('error: recommended');
 }
+
+// ---------- SALE ----------
+
+// swiper
+
+const sale = document.querySelector('[data-sale]');
+
+if (typeof Swiper !== 'undefined' && sale) {
+   const saleSwiper = new Swiper(sale, {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      speed: 500,
+
+      navigation: {
+         prevEl: '[data-sale-prev]',
+         nextEl: '[data-sale-next]',
+      },
+   });
+} else {
+   console.error('error: sale');
+}
