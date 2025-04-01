@@ -27,44 +27,60 @@ if (typeof Swiper !== 'undefined' && slider) {
    console.error('error: slider');
 }
 
-// ---------- RECOMMENDED ----------
+// ---------- TOP-PRODUCTS ----------
 
 // swiper
 
-const recommended = document.querySelector('[data-recommended]');
+const topProducts = document.querySelector('[data-top-products]');
 
-if (typeof Swiper !== 'undefined' && recommended) {
-   const recommendedSwiper = new Swiper(recommended, {
-      slidesPerView: 4,
+if (typeof Swiper !== 'undefined' && topProducts) {
+   const topProductsSwiper = new Swiper(topProducts, {
+      slidesPerView: 'auto',
       spaceBetween: 20,
       speed: 500,
-
-      navigation: {
-         prevEl: '[data-recommended-prev]',
-         nextEl: '[data-recommended-next]',
-      },
    });
 } else {
-   console.error('error: recommended');
+   console.error('error: top-products');
 }
 
-// ---------- SALE ----------
+// ---------- RECOMMENDED-PRODUCTS ----------
 
 // swiper
 
-const sale = document.querySelector('[data-sale]');
+const recommendedProducts = document.querySelector('[data-recommended-products]');
 
-if (typeof Swiper !== 'undefined' && sale) {
-   const saleSwiper = new Swiper(sale, {
+if (typeof Swiper !== 'undefined' && recommendedProducts) {
+   const recommendedProductsSwiper = new Swiper(recommendedProducts, {
       slidesPerView: 4,
       spaceBetween: 20,
       speed: 500,
 
       navigation: {
-         prevEl: '[data-sale-prev]',
-         nextEl: '[data-sale-next]',
+         prevEl: '[data-recommended-products-prev]',
+         nextEl: '[data-recommended-products-next]',
       },
    });
 } else {
-   console.error('error: sale');
+   console.error('error: recommended-products');
+}
+
+// ---------- SALE-PRODUCTS ----------
+
+// swiper
+
+const saleProducts = document.querySelector('[data-sale-products]');
+
+if (typeof Swiper !== 'undefined' && saleProducts) {
+   const saleProductsSwiper = new Swiper(saleProducts, {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      speed: 500,
+
+      navigation: {
+         prevEl: '[data-sale-products-prev]',
+         nextEl: '[data-sale-products-next]',
+      },
+   });
+} else {
+   console.error('error: sale-products');
 }
