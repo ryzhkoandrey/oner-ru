@@ -51,6 +51,10 @@
       position: relative;
       width: 100%;
       max-width: 430px;
+
+      @include tablet {
+         max-width: 390px;
+      }
    }
 
    &__search-input {
@@ -77,6 +81,10 @@
       position: absolute;
       top: 12px;
       right: 12px;
+
+      @include tablet {
+         right: 20px;
+      }
    }
 
    &__search-btn-icon {}
@@ -88,6 +96,10 @@
       display: flex;
       align-items: center;
       gap: 10px;
+
+      @include tablet {
+         display: none;
+      }
    }
 
    &__location-icon {}
@@ -99,12 +111,27 @@
       color: #1b1d1f;
    }
 
+   &__location-mobile {
+      display: none;
+
+      @include tablet {
+         margin: 0 0 0 auto;
+         display: block;
+      }
+   }
+
+   &__location-mobile-icon {}
+
    // tel
 
    &__tel {
       display: flex;
       align-items: center;
       gap: 8px;
+
+      @include tablet {
+         display: none;
+      }
 
       &:hover {
 
@@ -125,6 +152,17 @@
       transition: all .2s;
    }
 
+   &__tel-mobile {
+      display: none;
+
+      @include tablet {
+         margin: 0 15px;
+         display: block;
+      }
+   }
+
+   &__tel-icon {}
+
    // user
 
    &__user {
@@ -132,6 +170,10 @@
       display: flex;
       align-items: center;
       gap: 7px;
+
+      @include tablet {
+         display: none;
+      }
    }
 
    &__user-icon {}
@@ -154,6 +196,16 @@
 
    &__user-text {}
 
+   &__user-mobile {
+      display: none;
+
+      @include tablet {
+         display: block;
+      }
+   }
+
+   &__user-mobile-icon {}
+
    // bottom
 
    &__bottom {}
@@ -173,7 +225,12 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      flex-shrink: 0;
       background: #6b59cc;
+
+      @include tablet {
+         padding: 11px 15px;
+      }
 
       &:hover {
          background: #5946D7;
@@ -192,12 +249,21 @@
 
    // menu
 
-   &__menu {}
+   &__menu {
+
+      @include tablet {
+         overflow: auto;
+      }
+   }
 
    &__menu-list {
       display: flex;
       align-items: center;
       gap: 5px;
+
+      @include tablet {
+         gap: 0;
+      }
    }
 
    &__menu-item {}
@@ -208,6 +274,11 @@
       font-size: 16px;
       line-height: 1.25;
       color: #1b1d1f;
+      white-space: nowrap;
+
+      @include tablet {
+         padding: 14px 10px 10px;
+      }
 
       &:hover {
          background: #f4f5f6;
@@ -220,10 +291,16 @@
       border-radius: 8px;
       padding: 6px 15px 6px 25px;
       margin: 0 0 0 auto;
+      flex-shrink: 0;
       display: flex;
       align-items: center;
       gap: 10px;
       background: #f4f5f6;
+
+      @include tablet {
+         padding: 0;
+         background: transparent;
+      }
 
       &:hover {
 
