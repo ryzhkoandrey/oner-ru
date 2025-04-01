@@ -114,6 +114,7 @@
    .swiper-slide {
       display: flex;
       flex-direction: column;
+      max-width: 300px;
       height: auto;
    }
 
