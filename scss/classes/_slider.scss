@@ -1,6 +1,10 @@
 .slider {
    padding: 30px 0 40px;
 
+   @include tablet {
+      padding: 20px 0 30px;
+   }
+
    &__slide {}
 
    &__img {
@@ -25,11 +29,11 @@
    }
 
    &__arrow-prev {
-      transform: translateX(-50%);
+      transform: translateX(-10px);
    }
 
    &__arrow-next {
-      transform: translateX(50%);
+      transform: translateX(10px);
    }
 
    &__pagination {
@@ -39,10 +43,21 @@
       right: 0;
       bottom: 56px;
       left: 0;
+
+      @include tablet {
+         bottom: 30px;
+      }
    }
 
    &__pagination-inner {
       padding: 0 0 0 56px;
+
+      @include tablet {
+         padding: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
    }
 
    // swiper
@@ -55,6 +70,10 @@
       opacity: 0.3;
       transition: all .2s;
       pointer-events: all;
+
+      @include tablet {
+         background: #5946d7;
+      }
 
       &:hover {
          opacity: 1;
