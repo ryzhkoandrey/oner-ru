@@ -39,6 +39,7 @@
       border-radius: 10px;
       padding: 20px;
       display: flex;
+      align-items: flex-start;
       gap: 20px;
       box-shadow: 0 5px 20px 0 rgba(33, 34, 46, .15);
       background: #fff;
@@ -49,6 +50,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 20px;
+
+      @include tablet {
+         grid-template-columns: 1fr;
+      }
    }
 
    &__item {}
@@ -81,6 +86,7 @@
    }
 
    &__banner {
+      flex-shrink: 0;
 
       &:hover {
          opacity: .9;
@@ -91,47 +97,4 @@
       border-radius: 10px;
       background: #fafafd;
    }
-}
-
-.header {
-
-   &--active {
-
-      @include mobile {
-         position: fixed;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-         overflow-y: auto;
-      }
-   }
-
-   &__menu {
-
-      @include mobile {
-         pointer-events: none;
-         visibility: hidden;
-         position: absolute;
-         top: 0;
-         left: -120%;
-         width: 100%;
-         transition: all .2s;
-      }
-
-      &--active {
-
-         @include mobile {
-            pointer-events: all;
-            visibility: visible;
-            left: 0;
-         }
-      }
-   }
-
-   &__menu-list {}
-
-   &__menu-item {}
-
-   &__menu-link {}
 }
