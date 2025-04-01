@@ -1,1 +1,114 @@
-.footer {}
+.footer {
+   color: #fff;
+   background: #2f2b4a;
+
+   // top
+
+   &__top {
+      padding: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      justify-content: space-between;
+      gap: 30px;
+   }
+
+   &__top-col {}
+
+   // menu
+
+   &__menu-title {
+      margin: 0 0 20px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22222;
+   }
+
+   &__menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+
+   &__menu-item {}
+
+   &__menu-link {
+      font-size: 16px;
+      line-height: 1.25;
+      color: #f4f5f6;
+
+      &:hover {
+         opacity: .7;
+      }
+   }
+
+
+   // consultation
+
+   &__consultation {
+      margin: 0 0 20px;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 10px;
+      padding: 15px 20px 15px 50px;
+      background: rgba(255, 255, 255, .1);
+
+      &:hover {
+         border-color: #fff;
+      }
+   }
+
+   &__consultation-icon {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+   }
+
+   &__consultation-title {
+      margin: 0 0 2px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.375;
+      color: #fff;
+   }
+
+   &__consultation-text {
+      font-size: 14px;
+      line-height: 1.28571;
+      color: #f4f5f6;
+   }
+
+   // service
+
+   &__service {}
+
+   &__service-text {}
+
+   // bottom
+
+   &__bottom {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+   }
+
+   // copyright
+
+   &__copyright {}
+
+   // pay
+
+   &__pay {}
+
+   &__pay-text {}
+
+   &__pay-cards {}
+
+   &__pay-card {}
+
+   // links
+
+   &__links {}
+
+   &__links-link {}
+}
