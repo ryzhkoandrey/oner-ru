@@ -1,20 +1,20 @@
 @mixin laptop() {
 
-   @media (max-width: 1024px) {
+   @media (max-width: 1200px) {
       @content;
    }
 }
 
 @mixin tablet() {
 
-   @media (max-width: 768px) {
+   @media (max-width: 1024px) {
       @content;
    }
 }
 
 @mixin mobile() {
 
-   @media (max-width: 426px) {
+   @media (max-width: 375px) {
       @content;
    }
 }

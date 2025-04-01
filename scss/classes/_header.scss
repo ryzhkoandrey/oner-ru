@@ -26,6 +26,10 @@
       margin: 0 2px 0 0;
       transition: all .2s;
 
+      @include tablet {
+         width: 158px;
+      }
+
       &:hover {
          opacity: .7;
       }
