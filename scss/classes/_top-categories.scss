@@ -1,8 +1,14 @@
 .top-categories {
+   overflow: hidden;
    padding: 0 0 60px;
    background: #fff;
 
-   &__slider {}
+   &__slider {
+
+      @include laptop {
+         margin-right: calc(var(--container-padding) * -1);
+      }
+   }
 
    &__item {
       position: relative;
@@ -54,6 +60,13 @@
    &__item-link-icon {}
 
    // Swiper
+
+   .swiper {
+
+      @include laptop {
+         padding-right: var(--container-padding);
+      }
+   }
 
    .swiper-slide {
       max-width: 407px;
