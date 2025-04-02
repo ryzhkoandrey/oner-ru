@@ -67,8 +67,9 @@ const recommendedProducts = document.querySelector('[data-recommended-products]'
 
 if (typeof Swiper !== 'undefined' && recommendedProducts) {
    const recommendedProductsSwiper = new Swiper(recommendedProducts, {
-      slidesPerView: 4,
+      slidesPerView: 'auto',
       spaceBetween: 20,
+      freeMode: true,
 
       navigation: {
          prevEl: '[data-recommended-products-prev]',
