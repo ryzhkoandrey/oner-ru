@@ -11,6 +11,7 @@
    }
 
    &__item {
+      overflow: hidden;
       position: relative;
       padding: 30px;
       min-height: 250px;
@@ -21,6 +22,11 @@
       position: absolute;
       right: 0;
       bottom: 0;
+
+      @include tablet {
+         right: auto;
+         left: 185px;
+      }
    }
 
    &__item-info {
@@ -70,5 +76,9 @@
 
    .swiper-slide {
       max-width: 407px;
+
+      @include tablet {
+         max-width: 354px;
+      }
    }
 }

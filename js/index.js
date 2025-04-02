@@ -37,6 +37,7 @@ if (typeof Swiper !== 'undefined' && topProducts) {
    const topProductsSwiper = new Swiper(topProducts, {
       slidesPerView: 'auto',
       spaceBetween: 20,
+      freeMode: true,
    });
 } else {
    console.error('error: top-products');
@@ -52,6 +53,7 @@ if (typeof Swiper !== 'undefined' && topCategories) {
    const topCategoriesSwiper = new Swiper(topCategories, {
       slidesPerView: 'auto',
       spaceBetween: 20,
+      freeMode: true,
    });
 } else {
    console.error('error: top-categories');
