@@ -11,9 +11,26 @@
       grid-template-columns: repeat(5, auto);
       justify-content: space-between;
       gap: 30px;
+
+      @include tablet {
+         padding: 30px 0;
+         grid-template-columns: repeat(4, auto);
+         gap: 30px 25px;
+      }
    }
 
-   &__top-col {}
+   &__top-col {
+
+      &:last-child {
+
+         @include tablet {
+            grid-column: span 4;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+         }
+      }
+   }
 
    // menu
 
@@ -36,6 +53,7 @@
       font-size: 16px;
       line-height: 1.25;
       color: #f4f5f6;
+      white-space: nowrap;
 
       &:hover {
          opacity: .7;
@@ -52,6 +70,10 @@
       border-radius: 10px;
       padding: 15px 20px 15px 50px;
       background: rgba(255, 255, 255, .1);
+
+      @include tablet {
+         margin: 0;
+      }
 
       &:hover {
          border-color: #6B59CC;
@@ -121,11 +143,18 @@
    // bottom
 
    &__bottom {
+      position: relative;
       padding: 20px 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       align-items: center;
       gap: 30px;
+
+      @include tablet {
+         display: flex;
+         justify-content: space-between;
+         gap: 15px;
+      }
    }
 
    // copyright
@@ -179,6 +208,12 @@
       align-items: center;
       justify-content: flex-end;
       gap: 30px;
+
+      @include tablet {
+         position: absolute;
+         right: 0;
+         bottom: 135px;
+      }
    }
 
    &__links-link {

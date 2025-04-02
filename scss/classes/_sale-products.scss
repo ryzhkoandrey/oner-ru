@@ -1,3 +1,7 @@
 .sale-products {
    padding: 0 0 35px;
+
+   @include tablet {
+      padding: 0 0 15px;
+   }
 }

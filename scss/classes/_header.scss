@@ -328,7 +328,7 @@
    &__cart-count {
       border-radius: 25px;
       padding: 2px 0 0;
-      width: 20px;
+      min-width: 20px;
       height: 20px;
       display: flex;
       align-items: center;
