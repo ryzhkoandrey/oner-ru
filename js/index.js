@@ -88,8 +88,9 @@ const saleProducts = document.querySelector('[data-sale-products]');
 
 if (typeof Swiper !== 'undefined' && saleProducts) {
    const saleProductsSwiper = new Swiper(saleProducts, {
-      slidesPerView: 4,
+      slidesPerView: 'auto',
       spaceBetween: 20,
+      freeMode: true,
 
       navigation: {
          prevEl: '[data-sale-products-prev]',

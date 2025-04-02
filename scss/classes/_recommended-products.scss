@@ -1,3 +1,7 @@
 .recommended-products {
    padding: 0 0 40px;
+
+   @include tablet {
+      padding: 0 0 20px;
+   }
 }
