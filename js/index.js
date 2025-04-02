@@ -37,7 +37,6 @@ if (typeof Swiper !== 'undefined' && topProducts) {
    const topProductsSwiper = new Swiper(topProducts, {
       slidesPerView: 'auto',
       spaceBetween: 20,
-      speed: 500,
    });
 } else {
    console.error('error: top-products');
@@ -53,7 +52,6 @@ if (typeof Swiper !== 'undefined' && recommendedProducts) {
    const recommendedProductsSwiper = new Swiper(recommendedProducts, {
       slidesPerView: 4,
       spaceBetween: 20,
-      speed: 500,
 
       navigation: {
          prevEl: '[data-recommended-products-prev]',
@@ -74,7 +72,6 @@ if (typeof Swiper !== 'undefined' && saleProducts) {
    const saleProductsSwiper = new Swiper(saleProducts, {
       slidesPerView: 4,
       spaceBetween: 20,
-      speed: 500,
 
       navigation: {
          prevEl: '[data-sale-products-prev]',
