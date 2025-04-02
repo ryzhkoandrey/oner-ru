@@ -42,6 +42,21 @@ if (typeof Swiper !== 'undefined' && topProducts) {
    console.error('error: top-products');
 }
 
+// ---------- TOP-CATEGORIES ----------
+
+// swiper
+
+const topCategories = document.querySelector('[data-top-categories]');
+
+if (typeof Swiper !== 'undefined' && topCategories) {
+   const topCategoriesSwiper = new Swiper(topCategories, {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+   });
+} else {
+   console.error('error: top-categories');
+}
+
 // ---------- RECOMMENDED-PRODUCTS ----------
 
 // swiper

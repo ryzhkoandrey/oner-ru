@@ -2,11 +2,7 @@
    padding: 0 0 60px;
    background: #fff;
 
-   &__inner {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-   }
+   &__slider {}
 
    &__item {
       position: relative;
@@ -56,4 +52,10 @@
    }
 
    &__item-link-icon {}
+
+   // Swiper
+
+   .swiper-slide {
+      max-width: 407px;
+   }
 }
