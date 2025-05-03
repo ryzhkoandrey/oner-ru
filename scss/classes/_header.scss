@@ -1,6 +1,6 @@
 .header {
    z-index: 10;
-   box-shadow: 0 5px 20px 0 rgba(44, 41, 51, .1);
+   box-shadow: 0 5px 20px 0 rgba(44, 41, 51, 0.1);
    background: #fff;
 
    // top
@@ -24,25 +24,25 @@
 
    &__logo {
       margin: 0 2px 0 0;
-      transition: all .2s;
+      transition: all 0.2s;
 
       @include laptop {
          width: 158px;
       }
 
       &:hover {
-         opacity: .7;
+         opacity: 0.7;
       }
 
       &--index {
-
          &:hover {
             opacity: 1;
          }
       }
    }
 
-   &__logo-img {}
+   &__logo-img {
+   }
 
    // search
 
@@ -71,7 +71,7 @@
       line-height: 1.25;
       color: #1b1d1f;
       background: #f4f5f6;
-      transition: all .2s;
+      transition: all 0.2s;
 
       &::placeholder {
          color: #55556d;
@@ -92,7 +92,8 @@
       }
    }
 
-   &__search-btn-icon {}
+   &__search-btn-icon {
+   }
 
    // location
 
@@ -107,30 +108,27 @@
          gap: 5px;
       }
 
-      @include tablet {
-         display: none;
+      &:hover {
+         .header__location-text {
+            color: #6b59cc;
+         }
       }
    }
 
-   &__location-icon {}
+   &__location-icon {
+   }
 
    &__location-text {
       transform: translateY(2px);
       font-size: 16px;
       line-height: 1.25;
       color: #1b1d1f;
-   }
-
-   &__location-mobile {
-      display: none;
+      transition: all 0.2s;
 
       @include tablet {
-         margin: 0 0 0 auto;
-         display: block;
+         display: none;
       }
    }
-
-   &__location-mobile-icon {}
 
    // tel
 
@@ -143,19 +141,15 @@
          gap: 5px;
       }
 
-      @include tablet {
-         display: none;
-      }
-
       &:hover {
-
          .header__tel-text {
             color: #6b59cc;
          }
       }
    }
 
-   &__tel-icon {}
+   &__tel-icon {
+   }
 
    &__tel-text {
       transform: translateY(2px);
@@ -163,19 +157,15 @@
       font-size: 18px;
       line-height: 1.22222;
       color: #1b1d1f;
-      transition: all .2s;
-   }
-
-   &__tel-mobile {
-      display: none;
+      transition: all 0.2s;
 
       @include tablet {
-         margin: 0 15px;
-         display: block;
+         display: none;
       }
    }
 
-   &__tel-icon {}
+   &__tel-icon {
+   }
 
    // user
 
@@ -190,44 +180,32 @@
          gap: 5px;
       }
 
-      @include tablet {
-         display: none;
+      &:hover {
+         .header__user-text {
+            color: #6b59cc;
+         }
       }
    }
 
-   &__user-icon {}
+   &__user-icon {
+   }
 
-   &__user-link,
    &__user-text {
       transform: translateY(2px);
       font-size: 16px;
       line-height: 1.25;
       text-align: right;
       color: #1b1d1f;
-   }
-
-   &__user-link {
-
-      &:hover {
-         color: #6b59cc;
-      }
-   }
-
-   &__user-text {}
-
-   &__user-mobile {
-      display: none;
 
       @include tablet {
-         display: block;
+         display: none;
       }
    }
-
-   &__user-mobile-icon {}
 
    // bottom
 
-   &__bottom {}
+   &__bottom {
+   }
 
    &__bottom-inner {
       padding: 13px 0;
@@ -252,11 +230,12 @@
       }
 
       &:hover {
-         background: #5946D7;
+         background: #5946d7;
       }
    }
 
-   &__categories-icon {}
+   &__categories-icon {
+   }
 
    &__categories-text {
       transform: translateY(1px);
@@ -269,7 +248,6 @@
    // menu
 
    &__menu {
-
       @include tablet {
          overflow: auto;
       }
@@ -285,7 +263,8 @@
       }
    }
 
-   &__menu-item {}
+   &__menu-item {
+   }
 
    &__menu-link {
       border-radius: 8px;
@@ -322,7 +301,6 @@
       }
 
       &:hover {
-
          .header__cart-text {
             color: #6b59cc;
          }
@@ -333,7 +311,8 @@
       }
    }
 
-   &__cart-icon {}
+   &__cart-icon {
+   }
 
    &__cart-text {
       transform: translateY(1px);
@@ -341,7 +320,7 @@
       font-size: 16px;
       line-height: 1.375;
       color: #1b1d1f;
-      transition: all .2s;
+      transition: all 0.2s;
    }
 
    &__cart-count {
@@ -357,6 +336,6 @@
       line-height: 1;
       color: #fff;
       background: #fb6019;
-      transition: all .2s;
+      transition: all 0.2s;
    }
 }
