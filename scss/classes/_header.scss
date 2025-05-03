@@ -53,11 +53,13 @@
       max-width: 430px;
 
       @include laptop {
-         margin: 0 auto 0 0;
+         margin: 0;
+         max-width: none;
          flex-shrink: 1;
       }
 
       @include tablet {
+         margin: 0 auto 0 0;
          max-width: 390px;
       }
    }
