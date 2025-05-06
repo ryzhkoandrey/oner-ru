@@ -13,7 +13,25 @@
    &__top-inner {
       display: flex;
       align-items: center;
+      gap: 20px;
+
+      & > * {
+         flex-shrink: 0;
+      }
+   }
+
+   &__top-col {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
       gap: 15px;
+
+      @include tablet {
+         flex-grow: 0;
+         margin: 0 0 0 auto;
+         gap: 30px;
+      }
 
       & > * {
          flex-shrink: 0;
@@ -23,7 +41,6 @@
    // logo
 
    &__logo {
-      margin: 0 2px 0 0;
       transition: all 0.2s;
 
       @include laptop {
@@ -34,7 +51,7 @@
          opacity: 0.7;
       }
 
-      &--index {
+      &--no-hover {
          &:hover {
             opacity: 1;
          }
@@ -47,19 +64,12 @@
    // search
 
    &__search {
-      margin: 0 5px 0 0;
       position: relative;
       width: 100%;
       max-width: 430px;
-
-      @include laptop {
-         margin: 0;
-         max-width: none;
-         flex-shrink: 1;
-      }
+      flex-shrink: 1;
 
       @include tablet {
-         margin: 0 auto 0 0;
          max-width: 390px;
       }
    }
@@ -100,13 +110,11 @@
    // location
 
    &__location {
-      margin: 0 35px 0 0;
       display: flex;
       align-items: center;
       gap: 10px;
 
       @include laptop {
-         margin: 0;
          gap: 5px;
       }
 
@@ -172,13 +180,11 @@
    // user
 
    &__user {
-      margin: 0 0 0 auto;
       display: flex;
       align-items: center;
       gap: 7px;
 
       @include laptop {
-         margin: 0;
          gap: 5px;
       }
 
