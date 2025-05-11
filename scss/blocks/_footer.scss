@@ -17,6 +17,11 @@
          grid-template-columns: repeat(4, auto);
          gap: 30px 25px;
       }
+
+      @include mobile {
+         grid-template-columns: 1fr;
+         gap: 15px;
+      }
    }
 
    &__top-col {
@@ -26,6 +31,13 @@
             display: flex;
             align-items: center;
             gap: 40px;
+         }
+
+         @include mobile {
+            grid-column: span 1;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
          }
       }
    }
@@ -153,6 +165,10 @@
          justify-content: space-between;
          gap: 15px;
       }
+
+      @include mobile {
+         flex-direction: column;
+      }
    }
 
    // copyright
@@ -213,6 +229,12 @@
          position: absolute;
          right: 0;
          bottom: 135px;
+      }
+
+      @include mobile {
+         position: static;
+         right: auto;
+         bottom: auto;
       }
    }
 
