@@ -4,4 +4,8 @@
    @include tablet {
       padding: 35px 0 20px;
    }
+
+   @include mobile {
+      padding: 43px 0 20px;
+   }
 }

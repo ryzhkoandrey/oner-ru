@@ -29,19 +29,24 @@
       gap: 10px;
       background: #f4f5f6;
 
+      @include tablet {
+         display: none;
+      }
+
       &:hover {
-         border-color: #5946D7;
+         border-color: #5946d7;
       }
    }
 
    &__more-text {
-      font-family: "Stolzl", sans-serif;
+      font-family: 'Stolzl', sans-serif;
       font-size: 14px;
       line-height: 1.42857;
       color: #5946d7;
    }
 
-   &__more-icon {}
+   &__more-icon {
+   }
 
    // body
 
@@ -85,10 +90,9 @@
    // banner
 
    &__banner {
-
       &:hover {
-         opacity: .9;
-         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .07);
+         opacity: 0.9;
+         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
       }
    }
 
