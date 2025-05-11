@@ -130,7 +130,7 @@
 
       @include mobile {
          position: absolute;
-         top: 130px;
+         top: 74px;
          right: 15px;
          left: 70px;
          width: auto;
@@ -164,6 +164,10 @@
 
       @include tablet {
          right: 20px;
+      }
+
+      @include mobile {
+         right: 12px;
       }
    }
 
@@ -304,6 +308,10 @@
          padding: 11px 15px;
       }
 
+      @include mobile {
+         padding: 12px;
+      }
+
       &:hover {
          background: #5946d7;
       }
@@ -318,6 +326,10 @@
       font-size: 16px;
       line-height: 1.375;
       color: #fff;
+
+      @include mobile {
+         display: none;
+      }
    }
 
    // menu
