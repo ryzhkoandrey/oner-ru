@@ -22,6 +22,10 @@
          background: none;
          box-shadow: none;
       }
+
+      @include mobile-extra-small {
+         grid-template-columns: 1fr;
+      }
    }
 
    &__item {
@@ -75,8 +79,9 @@
          }
 
          @include mobile {
-            padding-top: 50px;
+            padding-top: 70px;
             padding-left: 20px;
+            align-items: flex-start;
          }
 
          &:hover {
