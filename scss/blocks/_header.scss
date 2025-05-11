@@ -1,4 +1,5 @@
 .header {
+   position: relative;
    z-index: 10;
    box-shadow: 0 5px 20px 0 rgba(44, 41, 51, 0.1);
    background: #fff;
@@ -8,6 +9,10 @@
    &__top {
       border-bottom: 1px solid #e3e3e8;
       padding: 13px 0;
+
+      @include mobile {
+         padding: 18px 0;
+      }
    }
 
    &__top-inner {
@@ -33,6 +38,10 @@
          gap: 30px;
       }
 
+      @include mobile {
+         gap: 64px;
+      }
+
       & > * {
          flex-shrink: 0;
       }
@@ -45,6 +54,10 @@
 
       @include laptop {
          width: 158px;
+      }
+
+      @include mobile {
+         width: 120px;
       }
 
       &:hover {
@@ -71,6 +84,14 @@
 
       @include tablet {
          max-width: 390px;
+      }
+
+      @include mobile {
+         position: absolute;
+         top: 130px;
+         right: 15px;
+         left: 70px;
+         width: auto;
       }
    }
 
@@ -149,6 +170,10 @@
 
       @include laptop {
          gap: 5px;
+      }
+
+      @include mobile {
+         display: none;
       }
 
       &:hover {
@@ -259,6 +284,10 @@
       @include laptop {
          overflow: auto;
       }
+
+      @include mobile {
+         display: none;
+      }
    }
 
    &__menu-list {
@@ -308,6 +337,13 @@
          background: transparent;
       }
 
+      @include mobile {
+         position: absolute;
+         top: 18px;
+         right: 60px;
+         width: 24px;
+      }
+
       &:hover {
          .header__cart-text {
             color: #6b59cc;
@@ -329,6 +365,10 @@
       line-height: 1.375;
       color: #1b1d1f;
       transition: all 0.2s;
+
+      @include mobile {
+         display: none;
+      }
    }
 
    &__cart-count {
@@ -345,5 +385,16 @@
       color: #fff;
       background: #fb6019;
       transition: all 0.2s;
+
+      @include mobile {
+         position: absolute;
+         top: -5px;
+         right: -7px;
+         min-width: 16px;
+         height: 16px;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 1.33333;
+      }
    }
 }

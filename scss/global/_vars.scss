@@ -1,12 +1,15 @@
 :root {
-
    // container
 
    --container-width: 1260px;
    --container-padding: 20px;
 
+   @include mobile {
+      --container-padding: 15px;
+   }
+
    // fonts
 
-   --font-primary: "TT Commons", sans-serif;
-   --font-secondary: "Stolzl", sans-serif;
+   --font-primary: 'TT Commons', sans-serif;
+   --font-secondary: 'Stolzl', sans-serif;
 }
