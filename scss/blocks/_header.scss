@@ -132,9 +132,13 @@
          position: absolute;
          top: 74px;
          right: 15px;
-         left: 70px;
+         left: 190px;
          max-width: none;
          width: auto;
+      }
+
+      @include mobile-small {
+         left: 70px;
       }
    }
 
@@ -309,7 +313,7 @@
          padding: 11px 15px;
       }
 
-      @include mobile {
+      @include mobile-small {
          padding: 12px;
       }
 
@@ -328,7 +332,7 @@
       line-height: 1.375;
       color: #fff;
 
-      @include mobile {
+      @include mobile-small {
          display: none;
       }
    }
