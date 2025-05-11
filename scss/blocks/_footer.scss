@@ -46,15 +46,48 @@
 
    &__menu-title {
       margin: 0 0 20px;
+
+      @include mobile {
+         margin: 0 0 15px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         transition: all 0.2s;
+         cursor: pointer;
+      }
+
+      &:hover {
+         @include mobile {
+            opacity: 0.7;
+         }
+      }
+   }
+
+   &__menu-title-text {
       font-weight: 500;
       font-size: 18px;
       line-height: 1.22222;
+   }
+
+   &__menu-title-icon {
+      display: none;
+
+      @include mobile {
+         display: block;
+         transition: all 0.2s;
+      }
    }
 
    &__menu-list {
       display: flex;
       flex-direction: column;
       gap: 8px;
+
+      @include mobile {
+         overflow: hidden;
+         max-height: 0;
+         transition: all 0.2s;
+      }
    }
 
    &__menu-item {
@@ -65,9 +98,18 @@
       line-height: 1.25;
       color: #f4f5f6;
       white-space: nowrap;
+      opacity: 0.9;
 
       &:hover {
          opacity: 0.7;
+      }
+   }
+
+   // menu accordion
+
+   .accordion--active {
+      .footer__menu-title-icon {
+         transform: rotate(180deg);
       }
    }
 

@@ -79,6 +79,7 @@
 
       @include mobile-small {
          max-width: 122px;
+         gap: 5px;
       }
 
       &:hover {

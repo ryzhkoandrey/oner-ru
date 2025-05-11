@@ -4,12 +4,20 @@
 
 const headerCategoriesBtn = document.querySelector('[data-header-categories-btn]');
 const allCategories = document.querySelector('[data-all-categories]');
-const allCategoriesContainer = allCategories.querySelector('[data-all-categories-container]');
-const allCategoriesInner = allCategories.querySelector('[data-all-categories-inner]');
+const allCategoriesContainer = allCategories.querySelector(
+   '[data-all-categories-container]'
+);
+const allCategoriesInner = allCategories.querySelector(
+   '[data-all-categories-inner]'
+);
 const body = document.querySelector('body');
 
-if (headerCategoriesBtn && allCategories && allCategoriesContainer && allCategoriesInner) {
-
+if (
+   headerCategoriesBtn &&
+   allCategories &&
+   allCategoriesContainer &&
+   allCategoriesInner
+) {
    // open
    headerCategoriesBtn.addEventListener('click', () => {
       const rect = headerCategoriesBtn.getBoundingClientRect();
@@ -133,3 +141,27 @@ if (typeof Swiper !== 'undefined' && saleProducts) {
 } else {
    console.error('error: sale-products');
 }
+
+// ---------- FOOTER ---------- //
+
+// menu accordion
+
+const accordions = document.querySelectorAll('[data-accordion]');
+const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
+
+accordions.forEach((accordion) => {
+   const accordionToggler = accordion.querySelector('[data-accordion-toggler]');
+   const accordionBody = accordion.querySelector('[data-accordion-body]');
+
+   accordionToggler.addEventListener('click', () => {
+      if (isMobile()) {
+         const isOpen = accordion.classList.toggle('accordion--active');
+
+         if (isOpen) {
+            accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+         } else {
+            accordionBody.removeAttribute('style');
+         }
+      }
+   });
+});
