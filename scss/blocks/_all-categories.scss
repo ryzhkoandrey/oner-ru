@@ -42,6 +42,10 @@
       gap: 20px;
       box-shadow: 0 5px 20px 0 rgba(33, 34, 46, 0.15);
       background: #fff;
+
+      @include mobile {
+         padding: 15px;
+      }
    }
 
    &__list {
@@ -52,6 +56,10 @@
 
       @include laptop {
          grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mobile {
+         grid-template-columns: 1fr;
       }
    }
 
@@ -91,6 +99,10 @@
 
       @include tablet {
          max-width: 200px;
+      }
+
+      @include mobile {
+         display: none;
       }
 
       &:hover {
