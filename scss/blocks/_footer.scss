@@ -82,12 +82,6 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-
-      @include mobile {
-         overflow: hidden;
-         max-height: 0;
-         transition: all 0.2s;
-      }
    }
 
    &__menu-item {
@@ -107,9 +101,19 @@
 
    // menu accordion
 
-   .accordion--active {
-      .footer__menu-title-icon {
-         transform: rotate(180deg);
+   .accordion {
+      &__body {
+         @include mobile {
+            overflow: hidden;
+            max-height: 0;
+            transition: all 0.2s;
+         }
+      }
+
+      &--active {
+         .footer__menu-title-icon {
+            transform: rotate(180deg);
+         }
       }
    }
 
@@ -271,12 +275,6 @@
          position: absolute;
          right: 0;
          bottom: 135px;
-      }
-
-      @include mobile {
-         position: static;
-         right: auto;
-         bottom: auto;
       }
    }
 
