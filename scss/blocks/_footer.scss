@@ -20,9 +20,7 @@
    }
 
    &__top-col {
-
       &:last-child {
-
          @include tablet {
             grid-column: span 4;
             display: flex;
@@ -47,7 +45,8 @@
       gap: 8px;
    }
 
-   &__menu-item {}
+   &__menu-item {
+   }
 
    &__menu-link {
       font-size: 16px;
@@ -56,28 +55,27 @@
       white-space: nowrap;
 
       &:hover {
-         opacity: .7;
+         opacity: 0.7;
       }
    }
-
 
    // consultation
 
    &__consultation {
       margin: 0 0 20px;
       position: relative;
-      border: 1px solid rgba(255, 255, 255, .2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 10px;
       padding: 15px 20px 15px 50px;
-      background: rgba(255, 255, 255, .1);
+      background: rgba(255, 255, 255, 0.1);
 
       @include tablet {
          margin: 0;
       }
 
       &:hover {
-         border-color: #6B59CC;
-         background: #6B59CC;
+         border-color: #6b59cc;
+         background: #6b59cc;
       }
    }
 
@@ -114,13 +112,13 @@
          top: 0;
          left: 0;
          border-radius: 100%;
-         background: #49C171;
+         background: #49c171;
       }
 
       &::before {
          width: 20px;
          height: 20px;
-         opacity: .3;
+         opacity: 0.3;
          animation: pulse 1s infinite;
       }
 
@@ -177,6 +175,7 @@
    &__pay-text {
       font-size: 16px;
       line-height: 1.25;
+      text-align: right;
       color: #fff;
    }
 
@@ -192,14 +191,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(244, 246, 249, .15);
+      background: rgba(244, 246, 249, 0.15);
 
       &:hover {
-         background: #6B59CC;
+         background: #6b59cc;
       }
    }
 
-   &__pay-icon {}
+   &__pay-icon {
+   }
 
    // links
 
@@ -222,7 +222,7 @@
       color: #f4f5f6;
 
       &:hover {
-         opacity: .7;
+         opacity: 0.7;
       }
    }
 }

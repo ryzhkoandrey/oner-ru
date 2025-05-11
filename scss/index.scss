@@ -10,24 +10,24 @@
 
 @import '../libs/swiper/swiper-bundle.min.css';
 
-// classes
+// blocks
 
-@import 'classes/none';
-@import 'classes/no-scroll';
-@import 'classes/no-scroll-adaptive';
-@import 'classes/container';
-@import 'classes/arrow';
-@import 'classes/title-2';
-@import 'classes/products';
-@import 'classes/product';
+@import 'blocks/none';
+@import 'blocks/no-scroll';
+@import 'blocks/no-scroll-adaptive';
+@import 'blocks/container';
+@import 'blocks/arrow';
+@import 'blocks/title-2';
+@import 'blocks/products';
+@import 'blocks/product';
 
-@import 'classes/header';
-@import 'classes/main';
-@import 'classes/slider';
-@import 'classes/categories';
-@import 'classes/top-products';
-@import 'classes/top-categories';
-@import 'classes/recommended-products';
-@import 'classes/sale-products';
-@import 'classes/footer';
-@import 'classes/all-categories.scss';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/slider';
+@import 'blocks/categories';
+@import 'blocks/top-products';
+@import 'blocks/top-categories';
+@import 'blocks/recommended-products';
+@import 'blocks/sale-products';
+@import 'blocks/footer';
+@import 'blocks/all-categories.scss';
