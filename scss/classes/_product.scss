@@ -7,11 +7,11 @@
    display: flex;
    flex-direction: column;
    background: #fff;
-   transition: all .2s;
+   transition: all 0.2s;
 
    &:hover {
       border-color: #f4f5f6;
-      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .07);
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
    }
 
    &__header {
@@ -22,7 +22,8 @@
       justify-content: center;
    }
 
-   &__photo {}
+   &__photo {
+   }
 
    &__body {
       margin: 0 0 11px;
@@ -59,9 +60,11 @@
       gap: 3px;
    }
 
-   &__rating-stars-star {}
+   &__rating-stars-star {
+   }
 
-   &__rating-count {}
+   &__rating-count {
+   }
 
    &__title {
       font-weight: 500;
@@ -101,27 +104,23 @@
    &__buy {
       z-index: 2;
       position: relative;
-      border: 2px solid #5946D7;
+      border: 2px solid #5946d7;
       border-radius: 8px;
       width: 40px;
       height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #5946d7;
 
       &:hover {
-         background: #5946D7;
-
-         .product__buy-icon {
-
-            path {
-               stroke: #fff;
-            }
-         }
+         color: #fff;
+         background: #5946d7;
       }
    }
 
-   &__buy-icon {}
+   &__buy-icon {
+   }
 
    &__link {
       position: absolute;
