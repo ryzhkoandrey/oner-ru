@@ -20,6 +20,10 @@
       align-items: center;
       gap: 20px;
 
+      @include mobile {
+         gap: 15px;
+      }
+
       & > * {
          flex-shrink: 0;
       }
@@ -44,6 +48,44 @@
 
       & > * {
          flex-shrink: 0;
+      }
+   }
+
+   // menu-toggler
+
+   &__menu-toggler {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      display: none;
+
+      @include mobile {
+         display: block;
+      }
+
+      &--active {
+         .header__menu-toggler-icon--open {
+            transform: translate(-50%, -50%) scale(0);
+         }
+
+         .header__menu-toggler-icon--close {
+            transform: translate(-50%, -50%) scale(1);
+         }
+      }
+   }
+
+   &__menu-toggler-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s;
+
+      &--open {
+      }
+
+      &--close {
+         transform: translate(-50%, -50%) scale(0);
       }
    }
 
