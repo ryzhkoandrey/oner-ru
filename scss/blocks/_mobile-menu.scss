@@ -22,9 +22,14 @@
    // row-1
 
    &__row-1 {
+      border-bottom: 1px solid #e3e3e8;
    }
 
    &__row-1-inner {
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
    }
 
    // close
@@ -38,56 +43,114 @@
    // user
 
    &__user {
+      display: flex;
+      align-items: center;
+      gap: 7px;
    }
 
    &__user-icon {
    }
 
    &__user-text {
+      transform: translateY(2px);
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: right;
+      color: #1b1d1f;
    }
 
    // row-2
 
    &__row-2 {
+      border-bottom: 1px solid #e3e3e8;
    }
 
    &__row-2-inner {
+      padding: 20px 0;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
    }
 
    // location
 
    &__location {
+      display: flex;
+      align-items: center;
+      gap: 10px;
    }
 
    &__location-icon {
    }
 
    &__location-text {
+      transform: translateY(2px);
+      font-size: 16px;
+      line-height: 1.25;
+      color: #1b1d1f;
+      transition: all 0.2s;
    }
 
    // tel
 
    &__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
    }
 
    &__tel-icon {
    }
 
    &__tel-text {
+      transform: translateY(2px);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #1b1d1f;
+      transition: all 0.2s;
+   }
+
+   &__tel-icon {
    }
 
    // cart
 
    &__cart {
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
    }
 
    &__cart-icon {
    }
 
    &__cart-text {
+      transform: translateY(1px);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.375;
+      color: #1b1d1f;
+      transition: all 0.2s;
    }
 
    &__cart-count {
+      border-radius: 25px;
+      padding: 2px 0 0;
+      min-width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+      color: #fff;
+      background: #fb6019;
+      transition: all 0.2s;
    }
 
    // row-3
@@ -104,5 +167,11 @@
    }
 
    &__list-link {
+      border-radius: 8px;
+      padding: 14px 15px 10px 15px;
+      font-size: 16px;
+      line-height: 1.25;
+      color: #1b1d1f;
+      white-space: nowrap;
    }
 }
