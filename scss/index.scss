@@ -2,9 +2,6 @@
 
 @import 'global/mixins';
 @import 'global/vars';
-@import 'global/fonts';
-@import 'global/reset';
-@import 'global/base';
 
 // libs
 
@@ -12,23 +9,13 @@
 
 // blocks
 
-@import 'blocks/none';
-@import 'blocks/no-scroll';
-@import 'blocks/no-scroll-adaptive';
-@import 'blocks/container';
 @import 'blocks/arrow';
-@import 'blocks/title-2';
 @import 'blocks/products';
 @import 'blocks/product';
 
-@import 'blocks/header';
-@import 'blocks/mobile-menu';
-@import 'blocks/main';
 @import 'blocks/slider';
 @import 'blocks/categories';
 @import 'blocks/top-products';
 @import 'blocks/top-categories';
 @import 'blocks/recommended-products';
 @import 'blocks/sale-products';
-@import 'blocks/footer';
-@import 'blocks/all-categories.scss';
