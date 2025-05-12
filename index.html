@@ -17,9 +17,8 @@
       <div class="header__top">
          <div class="container">
             <div class="header__top-inner">
-               <button class="header__menu-toggler" data-menu-toggler>
-                  <img class="header__menu-toggler-icon header__menu-toggler-icon--open" src="img/icons/menu.svg" width="24" height="24" alt="Открыть меню">
-                  <img class="header__menu-toggler-icon header__menu-toggler-icon--close" src="img/icons/close.svg" width="24" height="24" alt="Закрыть меню">
+               <button class="header__menu-open" data-mobile-menu-open>
+                  <img class="header__menu-open-icon" src="img/icons/menu.svg" width="24" height="24" alt="Открыть меню">
                </button>
 
                <div class="header__logo header__logo--disabled">
@@ -92,27 +91,6 @@
                   <span class="header__cart-count">5</span>
                </a>
             </div>
-         </div>
-      </div>
-
-      <div class="mobile-menu" data-menu>
-         <div class="mobile-menu__row-1">
-            <div class="container">
-               <button class="mobile-menu__user">
-                  <img class="mobile-menu__user-icon" src="img/icons/user.svg" width="24" height="24" alt="">
-                  <span class="mobile-menu__user-text">Вход</span>
-                  <span class="mobile-menu__user-text">/</span>
-                  <span class="mobile-menu__user-text">Регистрация</span>
-               </button>
-            </div>
-         </div>
-
-         <div class="mobile-menu__row-2">
-            <div class="container"></div>
-         </div>
-
-         <div class="mobile-menu__row-3">
-            <div class="container"></div>
          </div>
       </div>
    </header>
@@ -1414,6 +1392,33 @@
          </div>
       </div>
    </footer>
+
+   <div class="mobile-menu mobile-menu--active" data-mobile-menu>
+      <div class="mobile-menu__row-1">
+         <div class="container">
+            <div class="mobile-menu__row-1-inner">
+               <button class="mobile-menu__close" data-mobile-menu-close>
+                  <img class="mobile-menu__close-icon" src="img/icons/close.svg" width="24" height="24" alt="Закрыть меню">
+               </button>
+
+               <button class="mobile-menu__user">
+                  <img class="mobile-menu__user-icon" src="img/icons/user.svg" width="24" height="24" alt="">
+                  <span class="mobile-menu__user-text">Вход</span>
+                  <span class="mobile-menu__user-text">/</span>
+                  <span class="mobile-menu__user-text">Регистрация</span>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="mobile-menu__row-2">
+         <div class="container"></div>
+      </div>
+
+      <div class="mobile-menu__row-3">
+         <div class="container"></div>
+      </div>
+   </div>
 
    <div class="all-categories" data-all-categories>
       <div class="all-categories__container container" data-all-categories-container>

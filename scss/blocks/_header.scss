@@ -51,43 +51,19 @@
       }
    }
 
-   // menu-toggler
+   // menu-open
 
-   &__menu-toggler {
-      z-index: 2;
-      position: relative;
-      width: 24px;
-      height: 24px;
+   &__menu-open {
       display: none;
 
       @include mobile {
-         display: block;
-      }
-
-      &--active {
-         .header__menu-toggler-icon--open {
-            transform: translate(-50%, -50%) scale(0);
-         }
-
-         .header__menu-toggler-icon--close {
-            transform: translate(-50%, -50%) scale(1);
-         }
+         display: flex;
+         align-items: center;
+         justify-content: center;
       }
    }
 
-   &__menu-toggler-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: all 0.2s;
-
-      &--open {
-      }
-
-      &--close {
-         transform: translate(-50%, -50%) scale(0);
-      }
+   &__menu-open-icon {
    }
 
    // logo

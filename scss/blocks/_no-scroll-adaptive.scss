@@ -1,4 +1,4 @@
-.no-scroll {
+.no-scroll-adaptive {
    @include mobile {
       overflow: hidden;
    }

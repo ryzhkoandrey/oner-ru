@@ -1,15 +1,20 @@
 'use strict';
 
-// ---------- MENU ---------- //
+// ---------- MOBILE-MENU ---------- //
 
-const menu = document.querySelector('[data-menu]');
-const menuToggler = document.querySelector('[data-menu-toggler]');
+const menu = document.querySelector('[data-mobile-menu]');
+const menuOpen = document.querySelector('[data-mobile-menu-open]');
+const menuClose = document.querySelector('[data-mobile-menu-close]');
 
-if (menu && menuToggler) {
-   menuToggler.addEventListener('click', () => {
-      menu.classList.toggle('mobile-menu--active');
-      menuToggler.classList.toggle('header__menu-toggler--active');
-      document.querySelector('body').classList.toggle('no-scroll');
+if (menu && menuOpen && menuClose) {
+   menuOpen.addEventListener('click', () => {
+      menu.classList.add('mobile-menu--active');
+      document.querySelector('body').classList.add('no-scroll-adaptive');
+   });
+
+   menuClose.addEventListener('click', () => {
+      menu.classList.remove('mobile-menu--active');
+      document.querySelector('body').classList.remove('no-scroll-adaptive');
    });
 } else {
    console.error('error: menu');
