@@ -9,12 +9,12 @@ const menuClose = document.querySelector('[data-mobile-menu-close]');
 if (menu && menuOpen && menuClose) {
    menuOpen.addEventListener('click', () => {
       menu.classList.add('mobile-menu--active');
-      document.querySelector('body').classList.add('no-scroll-adaptive');
+      document.body.classList.add('no-scroll-adaptive');
    });
 
    menuClose.addEventListener('click', () => {
       menu.classList.remove('mobile-menu--active');
-      document.querySelector('body').classList.remove('no-scroll-adaptive');
+      document.body.classList.remove('no-scroll-adaptive');
    });
 } else {
    console.error('error: mobile-menu');
@@ -43,14 +43,14 @@ if (
       allCategoriesContainer.style.top = `${rect.bottom + window.scrollY}px`;
       window.scrollTo({ top: 0, behavior: 'smooth' });
       allCategories.classList.toggle('all-categories--active');
-      document.querySelector('body').classList.toggle('no-scroll');
+      document.body.classList.toggle('no-scroll');
    });
 
    // close
    allCategories.addEventListener('click', () => {
-      allCategories.classList.toggle('all-categories--active');
+      allCategories.classList.remove('all-categories--active');
       allCategoriesContainer.removeAttribute('style');
-      document.querySelector('body').classList.toggle('no-scroll');
+      document.body.classList.remove('no-scroll');
    });
 
    allCategoriesInner.addEventListener('click', (e) => {
@@ -71,15 +71,17 @@ accordions.forEach((accordion) => {
    const accordionToggler = accordion.querySelector('[data-accordion-toggler]');
    const accordionBody = accordion.querySelector('[data-accordion-body]');
 
-   accordionToggler.addEventListener('click', () => {
-      if (isMobile()) {
-         const isOpen = accordion.classList.toggle('accordion--active');
+   if (accordionToggler && accordionBody) {
+      accordionToggler.addEventListener('click', () => {
+         if (isMobile()) {
+            const isOpen = accordion.classList.toggle('accordion--active');
 
-         if (isOpen) {
-            accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
-         } else {
-            accordionBody.removeAttribute('style');
+            if (isOpen) {
+               accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+            } else {
+               accordionBody.removeAttribute('style');
+            }
          }
-      }
-   });
+      });
+   }
 });
