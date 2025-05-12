@@ -39,10 +39,18 @@
 
    &__arrow-prev {
       transform: translateX(-20px);
+
+      @include laptop {
+         transform: translateX(-10px);
+      }
    }
 
    &__arrow-next {
       transform: translateX(20px);
+
+      @include laptop {
+         transform: translateX(10px);
+      }
    }
 
    &__pagination {
