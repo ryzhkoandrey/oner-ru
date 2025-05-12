@@ -131,10 +131,10 @@
 
       @include tablet {
          margin: 0;
-         padding: 15px;
       }
 
       @include mobile {
+         padding: 15px;
          width: 100%;
          display: flex;
          align-items: flex-start;
@@ -252,6 +252,11 @@
 
       @include mobile {
          order: 1;
+         text-align: center;
+      }
+
+      @include mobile-extra-small {
+         font-size: 14px;
       }
    }
 
