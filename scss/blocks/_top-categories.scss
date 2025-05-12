@@ -55,14 +55,14 @@
    &__item-title {
       margin: 0 0 20px;
       max-width: 232px;
-      font-family: 'Stolzl', sans-serif;
+      font-family: var(--font-secondary);
       font-weight: 500;
       font-size: 24px;
       line-height: 1.33333;
       color: #1b1d1f;
 
       @include mobile-small {
-         font-family: 'TT Commons', sans-serif;
+         font-family: var(--font-primary);
          font-size: 18px;
          line-height: 1.22222;
       }
