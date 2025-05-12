@@ -1,5 +1,20 @@
 'use strict';
 
+// ---------- MENU ---------- //
+
+const menu = document.querySelector('[data-menu]');
+const menuToggler = document.querySelector('[data-menu-toggler]');
+
+if (menu && menuToggler) {
+   menuToggler.addEventListener('click', () => {
+      menu.classList.toggle('mobile-menu--active');
+      menuToggler.classList.toggle('header__menu-toggler--active');
+      document.querySelector('body').classList.toggle('no-scroll');
+   });
+} else {
+   console.error('error: menu');
+}
+
 // ---------- ALL CATEGORIES ---------- //
 
 const headerCategoriesBtn = document.querySelector('[data-header-categories-btn]');
@@ -10,7 +25,6 @@ const allCategoriesContainer = allCategories.querySelector(
 const allCategoriesInner = allCategories.querySelector(
    '[data-all-categories-inner]'
 );
-const body = document.querySelector('body');
 
 if (
    headerCategoriesBtn &&
@@ -24,14 +38,14 @@ if (
       allCategoriesContainer.style.top = `${rect.bottom + window.scrollY}px`;
       window.scrollTo({ top: 0, behavior: 'smooth' });
       allCategories.classList.toggle('all-categories--active');
-      body.classList.toggle('no-scroll');
+      document.querySelector('body').classList.toggle('no-scroll');
    });
 
    // close
    allCategories.addEventListener('click', () => {
       allCategories.classList.toggle('all-categories--active');
       allCategoriesContainer.removeAttribute('style');
-      body.classList.toggle('no-scroll');
+      document.querySelector('body').classList.toggle('no-scroll');
    });
 
    allCategoriesInner.addEventListener('click', (e) => {
