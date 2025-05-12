@@ -17,7 +17,7 @@ if (menu && menuOpen && menuClose) {
       document.querySelector('body').classList.remove('no-scroll-adaptive');
    });
 } else {
-   console.error('error: menu');
+   console.error('error: mobile-menu');
 }
 
 // ---------- ALL CATEGORIES ---------- //
