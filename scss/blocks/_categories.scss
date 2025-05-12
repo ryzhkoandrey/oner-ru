@@ -59,7 +59,7 @@
          }
 
          .categories__title {
-            color: #5946d7;
+            color: var(--color-primary);
          }
 
          .categories__title--more {
@@ -118,7 +118,7 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 1.5;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
       transition: all 0.2s;
 
       @include tablet {
@@ -147,7 +147,7 @@
    &__text {
       font-size: 14px;
       line-height: 1.28571;
-      color: #505255;
+      color: var(--color-text-secondary);
    }
 
    &__arrow {

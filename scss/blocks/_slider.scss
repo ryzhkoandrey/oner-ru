@@ -85,7 +85,7 @@
       pointer-events: all;
 
       @include tablet {
-         background: #5946d7;
+         background: var(--color-primary);
       }
 
       &:hover {

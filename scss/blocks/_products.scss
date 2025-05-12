@@ -34,7 +34,7 @@
       }
 
       &:hover {
-         border-color: #5946d7;
+         border-color: var(--color-primary);
       }
    }
 
@@ -42,7 +42,7 @@
       font-family: var(--font-secondary);
       font-size: 14px;
       line-height: 1.42857;
-      color: #5946d7;
+      color: var(--color-primary);
    }
 
    &__more-icon {

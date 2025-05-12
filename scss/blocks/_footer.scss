@@ -143,8 +143,8 @@
       }
 
       &:hover {
-         border-color: #6b59cc;
-         background: #6b59cc;
+         border-color: var(--color-primary);
+         background: var(--color-primary);
       }
    }
 
@@ -304,7 +304,7 @@
       background: rgba(244, 246, 249, 0.15);
 
       &:hover {
-         background: #6b59cc;
+         background: var(--color-primary);
       }
    }
 

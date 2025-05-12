@@ -45,7 +45,7 @@
    }
 
    &__articul-number {
-      color: #505255;
+      color: var(--color-text-secondary);
    }
 
    &__rating {
@@ -70,7 +70,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 1.375;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    &__footer {
@@ -91,7 +91,7 @@
       font-weight: 500;
       font-size: 30px;
       line-height: 1;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    &__price-old {
@@ -104,18 +104,18 @@
    &__buy {
       z-index: 2;
       position: relative;
-      border: 2px solid #5946d7;
+      border: 2px solid var(--color-primary);
       border-radius: 8px;
       width: 40px;
       height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #5946d7;
+      color: var(--color-primary);
 
       &:hover {
          color: #fff;
-         background: #5946d7;
+         background: var(--color-primary);
       }
    }
 

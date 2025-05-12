@@ -11,8 +11,9 @@
    background: #fff;
 
    &:hover {
-      border-color: #5946D7;
+      border-color: var(--color-primary);
    }
 
-   &__icon {}
+   &__icon {
+   }
 }
