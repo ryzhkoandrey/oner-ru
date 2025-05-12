@@ -193,6 +193,10 @@
          left: 0;
          border-radius: 100%;
          background: #49c171;
+
+         @include mobile {
+            top: -2px;
+         }
       }
 
       &::before {
@@ -207,6 +211,10 @@
          left: 5px;
          width: 10px;
          height: 10px;
+
+         @include mobile {
+            top: 3px;
+         }
       }
    }
 
