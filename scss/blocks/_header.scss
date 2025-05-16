@@ -78,19 +78,15 @@
       @include mobile {
          width: 120px;
       }
-
-      &:hover {
-         opacity: 0.7;
-      }
-
-      &--disabled {
-         &:hover {
-            opacity: 1;
-         }
-      }
    }
 
    &__logo-img {
+   }
+
+   a.header__logo {
+      &:hover {
+         opacity: 0.7;
+      }
    }
 
    // search

@@ -62,19 +62,21 @@ if (
 
 // ---------- FOOTER ---------- //
 
-// menu accordion
+// menu accordion (mobile only)
 
-const accordions = document.querySelectorAll('[data-accordion]');
+const footerAccordions = document.querySelectorAll('[data-footer-accordion]');
 const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
 
-accordions.forEach((accordion) => {
-   const accordionToggler = accordion.querySelector('[data-accordion-toggler]');
-   const accordionBody = accordion.querySelector('[data-accordion-body]');
+footerAccordions.forEach((accordion) => {
+   const accordionToggler = accordion.querySelector(
+      '[data-footer-accordion-toggler]'
+   );
+   const accordionBody = accordion.querySelector('[data-footer-accordion-body]');
 
    if (accordionToggler && accordionBody) {
       accordionToggler.addEventListener('click', () => {
          if (isMobile()) {
-            const isOpen = accordion.classList.toggle('accordion--active');
+            const isOpen = accordion.classList.toggle('footer__menu--active');
 
             if (isOpen) {
                accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
