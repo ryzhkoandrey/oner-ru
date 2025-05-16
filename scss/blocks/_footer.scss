@@ -25,24 +25,6 @@
       }
    }
 
-   &__top-col {
-      &:last-child {
-         @include tablet {
-            grid-column: span 4;
-            display: flex;
-            align-items: center;
-            gap: 40px;
-         }
-
-         @include mobile {
-            grid-column: span 1;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-         }
-      }
-   }
-
    // menu
 
    &__menu {
@@ -109,6 +91,24 @@
 
       &:hover {
          opacity: 0.7;
+      }
+   }
+
+   // info
+
+   &__info {
+      @include tablet {
+         grid-column: span 4;
+         display: flex;
+         align-items: center;
+         gap: 40px;
+      }
+
+      @include mobile {
+         grid-column: span 1;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 20px;
       }
    }
 
