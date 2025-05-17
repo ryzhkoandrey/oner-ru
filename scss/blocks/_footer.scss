@@ -89,7 +89,8 @@
       white-space: nowrap;
       opacity: 0.9;
 
-      &:hover {
+      &:hover,
+      &--active {
          opacity: 0.7;
       }
    }

@@ -73,7 +73,8 @@
       align-items: center;
       gap: 15px;
 
-      &:hover {
+      &:hover,
+      &--active {
          background: #f4f5f6;
 
          .all-categories__text {
