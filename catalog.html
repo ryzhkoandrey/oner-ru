@@ -113,7 +113,7 @@
                <div class="catalog__left">
                   <form class="filters" action="#">
                      <!-- Бренд -->
-                     <div class="filter" data-filter-accordion>
+                     <div class="filter filter--open" data-filter-accordion>
                         <button class="filter__toggler" type="button" data-filter-accordion-toggler>
                            <span class="filter__toggler-title">Бренд</span>
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
@@ -165,14 +165,68 @@
                                     <span class="checkbox__text">Berga</span>
                                  </label>
                               </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="brand" value="Varta more" aria-label="Varta more">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">Varta more</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="brand" value="Ac Delco more" aria-label="Ac Delco more">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">Ac Delco more</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="brand" value="Banner more" aria-label="Banner more">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">Banner more</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="brand" value="Berga more" aria-label="Berga more">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">Berga more</span>
+                                 </label>
+                              </li>
                            </ul>
 
                            <a class="filter__more" href="#">Показать все</a>
                         </div>
                      </div>
 
+                     <!-- Емкость батареи, А/ч -->
+                     <div class="filter filter--open" data-filter-accordion>
+                        <button class="filter__toggler" type="button" data-filter-accordion-toggler>
+                           <span class="filter__toggler-title">Емкость батареи, А/ч</span>
+                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
+                        </button>
+
+                        <div class="filter__body" data-filter-accordion-body>
+                           <div class="filter__range">
+                              <label class="filter__range-label">
+                                 <input class="filter__range-input" type="number" min="0" max="1000" step="1" value="30">
+                                 <span class="filter__range-text">от</span>
+                              </label>
+
+                              <label class="filter__range-label">
+                                 <input class="filter__range-input" type="number" min="0" max="1000" step="1" value="430">
+                                 <span class="filter__range-text">до</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+
                      <!-- Клеммы -->
-                     <div class="filter" data-filter-accordion>
+                     <div class="filter filter--open" data-filter-accordion>
                         <button class="filter__toggler" type="button" data-filter-accordion-toggler>
                            <span class="filter__toggler-title">Клеммы</span>
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
@@ -231,7 +285,7 @@
                      </div>
 
                      <!-- Крепление аккумулятора  -->
-                     <div class="filter" data-filter-accordion>
+                     <div class="filter filter--open" data-filter-accordion>
                         <button class="filter__toggler" type="button" data-filter-accordion-toggler>
                            <span class="filter__toggler-title">Крепление аккумулятора</span>
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
@@ -285,7 +339,7 @@
                      </div>
 
                      <!-- Напряжение, В  -->
-                     <div class="filter" data-filter-accordion>
+                     <div class="filter filter--open" data-filter-accordion>
                         <button class="filter__toggler" type="button" data-filter-accordion-toggler>
                            <span class="filter__toggler-title">Напряжение, В</span>
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
@@ -313,7 +367,7 @@
                      </div>
 
                      <!-- Расположение полюсных выводов -->
-                     <div class="filter" data-filter-accordion>
+                     <div class="filter filter--open" data-filter-accordion>
                         <button class="filter__toggler" type="button" data-filter-accordion-toggler>
                            <span class="filter__toggler-title">Расположение полюсных выводов</span>
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
@@ -367,7 +421,7 @@
                      </div>
 
                      <!-- Серия -->
-                     <div class="filter" data-filter-accordion>
+                     <div class="filter filter--open" data-filter-accordion>
                         <button class="filter__toggler" type="button" data-filter-accordion-toggler>
                            <span class="filter__toggler-title">Серия</span>
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
@@ -419,16 +473,18 @@
                            <a class="filter__more" href="#">Показать все</a>
                         </div>
                      </div>
+
+                     <button class="filters__btn">Сбросить фильтры</button>
                   </form>
                </div>
 
                <div class="catalog__right">
                   <div class="catalog__products">
-                     <div class="catalog-product"></div>
+                     <div class="catalog-product">catalog-product</div>
                   </div>
 
                   <div class="catalog__pagination">
-                     <div class="pagination"></div>
+                     <div class="pagination">pagination</div>
                   </div>
                </div>
             </div>
