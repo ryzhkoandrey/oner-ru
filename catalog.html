@@ -112,10 +112,11 @@
             <div class="catalog__body">
                <div class="catalog__left">
                   <form class="filters" action="#">
+                     <!-- Бренд -->
                      <div class="filter" data-filter-accordion>
                         <button class="filter__toggler" type="button" data-filter-accordion-toggler>
                            <span class="filter__toggler-title">Бренд</span>
-                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" loading="lazy" alt="">
+                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
                         </button>
 
                         <div class="filter__body" data-filter-accordion-body>
@@ -128,7 +129,7 @@
                                     <span class="checkbox__fake"></span>
                                     <span class="checkbox__text">
                                        Bosh
-                                       <span class="checkbox">(1450)</span>
+                                       <span class="checkbox__count">(1450)</span>
                                     </span>
                                  </label>
                               </li>
@@ -162,6 +163,255 @@
                                     <input class="checkbox__input" type="checkbox" name="brand" value="Berga" aria-label="Berga">
                                     <span class="checkbox__fake"></span>
                                     <span class="checkbox__text">Berga</span>
+                                 </label>
+                              </li>
+                           </ul>
+
+                           <a class="filter__more" href="#">Показать все</a>
+                        </div>
+                     </div>
+
+                     <!-- Клеммы -->
+                     <div class="filter" data-filter-accordion>
+                        <button class="filter__toggler" type="button" data-filter-accordion-toggler>
+                           <span class="filter__toggler-title">Клеммы</span>
+                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
+                        </button>
+
+                        <div class="filter__body" data-filter-accordion-body>
+                           <ul class="filter__list">
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="terminals" value="1" aria-label="1">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">1</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="terminals" value="1/3" aria-label="1/3">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">1/3</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="terminals" value="21" aria-label="21">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">
+                                       21
+                                       <span class="checkbox__count">
+                                          (234)
+                                       </span>
+                                    </span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="terminals" value="3 (JIS)" aria-label="3 (JIS)">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">3 (JIS)</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="terminals" value="8" aria-label="8">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">8</span>
+                                 </label>
+                              </li>
+                           </ul>
+
+                           <a class="filter__more" href="#">Показать все</a>
+                        </div>
+                     </div>
+
+                     <!-- Крепление аккумулятора  -->
+                     <div class="filter" data-filter-accordion>
+                        <button class="filter__toggler" type="button" data-filter-accordion-toggler>
+                           <span class="filter__toggler-title">Крепление аккумулятора</span>
+                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
+                        </button>
+
+                        <div class="filter__body" data-filter-accordion-body>
+                           <ul class="filter__list">
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="fastening" value="B00" aria-label="B00">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">B00</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="fastening" value="B03" aria-label="B03">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">B03</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="fastening" value="B06" aria-label="B06">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">B06</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="fastening" value="B09" aria-label="B09">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">B09</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="fastening" value="B13" aria-label="B13">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">B13</span>
+                                 </label>
+                              </li>
+                           </ul>
+
+                           <a class="filter__more" href="#">Показать все</a>
+                        </div>
+                     </div>
+
+                     <!-- Напряжение, В  -->
+                     <div class="filter" data-filter-accordion>
+                        <button class="filter__toggler" type="button" data-filter-accordion-toggler>
+                           <span class="filter__toggler-title">Напряжение, В</span>
+                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
+                        </button>
+
+                        <div class="filter__body" data-filter-accordion-body>
+                           <ul class="filter__list">
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="voltage" value="12" aria-label="12">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">12</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="voltage" value="6" aria-label="6">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">6</span>
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <!-- Расположение полюсных выводов -->
+                     <div class="filter" data-filter-accordion>
+                        <button class="filter__toggler" type="button" data-filter-accordion-toggler>
+                           <span class="filter__toggler-title">Расположение полюсных выводов</span>
+                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
+                        </button>
+
+                        <div class="filter__body" data-filter-accordion-body>
+                           <ul class="filter__list">
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="location" value="0 (обратная)" aria-label="0 (обратная)">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">0 (обратная)</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="location" value="1 (прямая)" aria-label="1 (прямая)">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">1 (прямая)</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="location" value="3" aria-label="3">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">3</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="location" value="6" aria-label="6">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">6</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="location" value="9" aria-label="9">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">9</span>
+                                 </label>
+                              </li>
+                           </ul>
+
+                           <a class="filter__more" href="#">Показать все</a>
+                        </div>
+                     </div>
+
+                     <!-- Серия -->
+                     <div class="filter" data-filter-accordion>
+                        <button class="filter__toggler" type="button" data-filter-accordion-toggler>
+                           <span class="filter__toggler-title">Серия</span>
+                           <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
+                        </button>
+
+                        <div class="filter__body" data-filter-accordion-body>
+                           <ul class="filter__list">
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="series" value="0 (обратная)" aria-label="0 (обратная)">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">0 (обратная)</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="series" value="1 (прямая)" aria-label="1 (прямая)">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">1 (прямая)</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="series" value="3" aria-label="3">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">3</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="series" value="6" aria-label="6">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">6</span>
+                                 </label>
+                              </li>
+
+                              <li class="filter__item">
+                                 <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="series" value="9" aria-label="9">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__text">9</span>
                                  </label>
                               </li>
                            </ul>
