@@ -214,12 +214,12 @@
                            <div class="filter__range">
                               <label class="filter__range-label filter__range-label--from">
                                  <span class="filter__range-text">от</span>
-                                 <input class="filter__range-input" type="number" min="0" max="1000" step="1" value="30">
+                                 <input class="filter__range-input" type="number" name="battery-from" min="0" max="1000" step="1" value="30">
                               </label>
 
                               <label class="filter__range-label filter__range-label--to">
                                  <span class="filter__range-text">до</span>
-                                 <input class="filter__range-input" type="number" min="0" max="1000" step="1" value="430">
+                                 <input class="filter__range-input" type="number" name="battery-to" min="0" max="1000" step="1" value="430">
                               </label>
                            </div>
                         </div>
@@ -453,7 +453,19 @@
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
                         </button>
 
-                        <div class="filter__body" data-filter-accordion-body></div>
+                        <div class="filter__body" data-filter-accordion-body>
+                           <div class="filter__range">
+                              <label class="filter__range-label filter__range-label--from">
+                                 <span class="filter__range-text">от</span>
+                                 <input class="filter__range-input" type="number" name="power-from" min="0" max="3000" step="1" value="290">
+                              </label>
+
+                              <label class="filter__range-label filter__range-label--to">
+                                 <span class="filter__range-text">до</span>
+                                 <input class="filter__range-input" type="number" name="power-to" min="0" max="3000" step="1" value="2400">
+                              </label>
+                           </div>
+                        </div>
                      </div>
 
                      <!-- Расположение полюсных выводов -->
@@ -619,7 +631,19 @@
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
                         </button>
 
-                        <div class="filter__body" data-filter-accordion-body></div>
+                        <div class="filter__body" data-filter-accordion-body>
+                           <div class="filter__range">
+                              <label class="filter__range-label filter__range-label--from">
+                                 <span class="filter__range-text">от</span>
+                                 <input class="filter__range-input" type="number" name="din-from" min="0" max="1000" step="1" value="8">
+                              </label>
+
+                              <label class="filter__range-label filter__range-label--to">
+                                 <span class="filter__range-text">до</span>
+                                 <input class="filter__range-input" type="number" name="din-to" min="0" max="1000" step="1" value="680">
+                              </label>
+                           </div>
+                        </div>
                      </div>
 
                      <!-- Ток холодной прокрутки EN, А -->
@@ -629,7 +653,19 @@
                            <img class="filter__toggler-icon" src="img/icons/arrow-down-black.svg" width="24" height="24" alt="">
                         </button>
 
-                        <div class="filter__body" data-filter-accordion-body></div>
+                        <div class="filter__body" data-filter-accordion-body>
+                           <div class="filter__range">
+                              <label class="filter__range-label filter__range-label--from">
+                                 <span class="filter__range-text">от</span>
+                                 <input class="filter__range-input" type="number" name="en-from" min="0" max="2000" step="1" value="0">
+                              </label>
+
+                              <label class="filter__range-label filter__range-label--to">
+                                 <span class="filter__range-text">до</span>
+                                 <input class="filter__range-input" type="number" name="en-to" min="0" max="2000" step="1" value="1450">
+                              </label>
+                           </div>
+                        </div>
                      </div>
 
                      <!-- Сбросить фильтры -->
