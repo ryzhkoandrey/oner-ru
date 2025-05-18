@@ -120,14 +120,35 @@
    // range
 
    &__range {
+      display: flex;
    }
 
    &__range-label {
-   }
+      border: 1px solid #dedee2;
+      padding: 0 5px 0 0;
+      height: 40px;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
 
-   &__range-input {
+      &--from {
+         border-radius: 4px 0 0 4px;
+      }
+
+      &--to {
+         border-radius: 0 4px 4px 0;
+         border-left: none;
+      }
    }
 
    &__range-text {
+      padding: 0 5px 0 20px;
+   }
+
+   &__range-input {
+      height: 100%;
+      font-size: 16px;
+      line-height: 1.25;
+      color: #7a7680;
    }
 }
