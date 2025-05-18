@@ -4,6 +4,19 @@
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
    background: #fff;
 
+   &__footer {
+      padding: 0 20px 20px;
+   }
+
    &__btn {
+      border-radius: 4px;
+      padding: 16px 20px 12px;
+      width: 100%;
+      min-height: 50px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #92979e;
+      background: #f4f5f6;
    }
 }
