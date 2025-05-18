@@ -1,8 +1,42 @@
 .checkbox {
    &__input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+
+      &:checked + .checkbox__fake {
+         background: #6b59cc;
+
+         &::after {
+            transform: scale(1);
+         }
+      }
    }
 
    &__fake {
+      position: relative;
+      border: 1px solid #000;
+      width: 20px;
+      height: 20px;
+      display: block;
+      background: #fff;
+      transition: all 0.2s;
+
+      &::after {
+         content: '';
+         transform: scale(0);
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 16px;
+         height: 16px;
+         display: block;
+         background: url('../img/icons/check.svg') no-repeat center;
+         transition: all 0.2s;
+      }
    }
 
    &__text {

@@ -1,20 +1,48 @@
 .filter {
+   padding: 20px;
+   border-bottom: 1px solid #e3e3e8;
+
    &--open {
    }
 
    &__toggler {
+      margin: 0 0 15px;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 15px;
    }
 
    &__toggler-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #1b1d1f;
    }
 
    &__toggler-icon {
    }
 
    &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
    }
 
    &__search {
+      border: 1px solid #dedee2;
+      border-radius: 4px;
+      padding: 0 20px;
+      height: 40px;
+      font-size: 16px;
+      line-height: 1.25;
+      color: #1b1d1f;
+      background: #fff;
+
+      &::placeholder {
+         color: #7a7680;
+      }
    }
 
    &__list {
