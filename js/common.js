@@ -85,5 +85,7 @@ footerAccordions.forEach((accordion) => {
             }
          }
       });
+   } else {
+      console.error('error: footer menu accordion');
    }
 });

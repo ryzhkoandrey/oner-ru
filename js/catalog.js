@@ -30,6 +30,8 @@ filterAccordions.forEach((accordion) => {
             accordionBody.removeAttribute('style');
          }
       });
+   } else {
+      console.error('error: filter accordion');
    }
 });
 
@@ -41,6 +43,8 @@ window.addEventListener('resize', () => {
          );
          if (accordionBody) {
             setAccordionHeight(accordionBody);
+         } else {
+            console.error('error: filter accordion');
          }
       }
    });
