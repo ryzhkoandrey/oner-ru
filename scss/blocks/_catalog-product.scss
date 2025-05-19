@@ -6,9 +6,23 @@
    display: flex;
    flex-direction: column;
    background: #fff;
+   transition: box-shadow 0.2s;
 
    &:hover {
       z-index: 1;
+      border-color: #f4f5f6;
+      border-bottom-color: #fff;
+      border-radius: 6px 6px 0 0;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+
+      .catalog-product__title {
+         color: #6b59cc;
+      }
+
+      .catalog-product__btn {
+         color: #fff;
+         background: #6b59cc;
+      }
 
       .catalog-product__characteristics {
          display: flex;
@@ -23,6 +37,7 @@
    }
 
    &__info {
+      z-index: 1;
       margin: 0 0 12px;
       display: flex;
       flex-direction: column;
@@ -40,6 +55,7 @@
       font-size: 16px;
       line-height: 1.25;
       color: #1b1d1f;
+      transition: all 0.2s;
    }
 
    &__articul {
@@ -53,6 +69,7 @@
    }
 
    &__btn {
+      z-index: 1;
       border-radius: 4px;
       margin: auto 0 0;
       padding: 13px 20px 9px;
@@ -63,18 +80,36 @@
       text-align: center;
       color: #6b59cc;
       background: #efedfb;
+      transition: all 0.2s;
    }
 
    &__characteristics {
+      display: none;
+
+      border: 1px solid #f4f5f6;
+      border-top-color: #fff;
+      border-radius: 0 0 6px 6px;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
       position: absolute;
-      left: 0;
+      right: -0.5px;
       bottom: 0;
-      right: 0;
+      left: -0.5px;
       transform: translateY(100%);
       padding: 0 20px 20px;
-      display: none;
       flex-direction: column;
       gap: 5px;
+      background: #fff;
+
+      &::before {
+         content: '';
+         display: block;
+         position: absolute;
+         top: -100px;
+         right: 0;
+         left: 0;
+         height: 100px;
+         background: #fff;
+      }
    }
 
    &__characteristics-item {
