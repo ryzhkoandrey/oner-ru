@@ -2,6 +2,17 @@
    display: flex;
    gap: 10px;
 
+   &:hover {
+      .checkbox__fake {
+         border-color: #6b59cc;
+      }
+
+      .checkbox__text,
+      .checkbox__count {
+         color: #6b59cc;
+      }
+   }
+
    &__input {
       position: absolute;
       width: 1px;
@@ -50,11 +61,13 @@
       font-size: 16px;
       line-height: 1.25;
       color: #1b1d1f;
+      transition: all 0.2s;
    }
 
    &__count {
       font-size: 14px;
       line-height: 1.28571;
       color: #7a7680;
+      transition: all 0.2s;
    }
 }

@@ -21,6 +21,12 @@
       align-items: flex-start;
       justify-content: space-between;
       gap: 15px;
+
+      &:hover {
+         .filter__toggler-title {
+            color: #6b59cc;
+         }
+      }
    }
 
    &__toggler-title {
@@ -29,6 +35,7 @@
       line-height: 1.22222;
       text-align: left;
       color: #1b1d1f;
+      transition: all 0.2s;
 
       &--small {
          font-size: 16px;
@@ -63,9 +70,14 @@
       line-height: 1.25;
       color: #1b1d1f;
       background: #fff;
+      transition: all 0.2s;
 
       &::placeholder {
          color: #7a7680;
+      }
+
+      &:hover {
+         border-color: var(--color-primary);
       }
    }
 
@@ -115,6 +127,10 @@
       font-size: 16px;
       line-height: 1.25;
       color: #6b59cc;
+
+      &:hover {
+         text-decoration: underline;
+      }
    }
 
    // range
@@ -130,6 +146,13 @@
       flex-grow: 1;
       display: flex;
       align-items: center;
+      transition: all 0.2s;
+
+      &:hover {
+         position: relative;
+         z-index: 1;
+         border-color: var(--color-primary);
+      }
 
       &--from {
          border-radius: 4px 0 0 4px;
@@ -137,7 +160,7 @@
 
       &--to {
          border-radius: 0 4px 4px 0;
-         border-left: none;
+         margin: 0 0 0 -1px;
       }
    }
 
