@@ -12,19 +12,16 @@
       gap: 20px;
    }
 
-   &__left {
-   }
+   &__left {}
 
-   &__right {
-   }
+   &__right {}
 
    &__products {
       margin: 0 0 40px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px 10px;
+      gap: 17px 10px;
    }
 
-   &__pagination {
-   }
+   &__pagination {}
 }
