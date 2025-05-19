@@ -49,6 +49,11 @@ ol {
    list-style: none;
 }
 
+dt,
+dd {
+   display: inline;
+}
+
 // Blockquote
 
 q,
@@ -85,7 +90,7 @@ textarea {
 }
 
 button,
-input[type="submit"] {
+input[type='submit'] {
    display: inline-block;
    background: transparent;
    box-shadow: none;
@@ -95,9 +100,9 @@ input[type="submit"] {
 
 button,
 label,
-input[type="checkbox"],
-input[type="radio"],
-input[type="submit"] {
+input[type='checkbox'],
+input[type='radio'],
+input[type='submit'] {
    cursor: pointer;
 }
 
