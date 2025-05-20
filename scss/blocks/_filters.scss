@@ -50,6 +50,10 @@
 
    &__footer {
       padding: 0 20px 20px;
+
+      @include tablet {
+         padding: 0 10px 10px;
+      }
    }
 
    &__btn {
