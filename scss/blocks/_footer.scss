@@ -75,7 +75,7 @@
       @include mobile {
          overflow: hidden;
          max-height: 0;
-         transition: all 0.2s;
+         transition: max-height 0.2s;
       }
    }
 
