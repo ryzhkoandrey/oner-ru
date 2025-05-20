@@ -67,7 +67,19 @@ filterAccordions.forEach((accordion) => {
    }
 });
 
+// resize
+
 window.addEventListener('resize', () => {
+   // filters accordion
+   if (filtersAccordion && filtersAccordionBody) {
+      if (filtersAccordion.classList.contains('filters--active')) {
+         setAccordionHeight(filtersAccordionBody);
+      }
+   } else {
+      console.error('error: filters accordion resize');
+   }
+
+   // filter accordion
    filterAccordions.forEach((accordion) => {
       if (accordion.classList.contains('filter--active')) {
          const accordionBody = accordion.querySelector(
@@ -76,7 +88,7 @@ window.addEventListener('resize', () => {
          if (accordionBody) {
             setAccordionHeight(accordionBody);
          } else {
-            console.error('error: filter accordion');
+            console.error('error: filter accordion resize');
          }
       }
    });
