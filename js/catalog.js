@@ -11,10 +11,10 @@ const setAccordionHeight = (accordionBody) => {
 // filters accordion
 
 const filtersAccordion = document.querySelector('[data-filters-accordion]');
-const filtersAccordionToggler = filtersAccordion.querySelector(
+const filtersAccordionToggler = filtersAccordion?.querySelector(
    '[data-filters-accordion-toggler]'
 );
-const filtersAccordionBody = filtersAccordion.querySelector(
+const filtersAccordionBody = filtersAccordion?.querySelector(
    '[data-filters-accordion-body]'
 );
 
@@ -60,6 +60,12 @@ filterAccordions.forEach((accordion) => {
             setAccordionHeight(accordionBody);
          } else {
             accordionBody.removeAttribute('style');
+         }
+
+         if (filtersAccordionBody) {
+            setAccordionHeight(filtersAccordionBody);
+         } else {
+            console.error('error: filter accordion');
          }
       });
    } else {
