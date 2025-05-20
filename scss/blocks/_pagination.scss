@@ -4,6 +4,10 @@
    justify-content: center;
    gap: 10px;
 
+   @include mobile-extra-small {
+      gap: 5px;
+   }
+
    &__item {
       border-radius: 8px;
       border: 1px solid #fff;
@@ -29,10 +33,18 @@
 
       &--prev {
          margin: 0 10px 0 0;
+
+         @include mobile-extra-small {
+            margin: 0;
+         }
       }
 
       &--next {
          margin: 0 0 0 10px;
+
+         @include mobile-extra-small {
+            margin: 0;
+         }
       }
 
       &--active {

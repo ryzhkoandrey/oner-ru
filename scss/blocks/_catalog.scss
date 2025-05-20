@@ -41,6 +41,10 @@
       @include tablet {
          gap: 17px 20px;
       }
+
+      @include mobile {
+         grid-template-columns: 1fr;
+      }
    }
 
    &__pagination {}
