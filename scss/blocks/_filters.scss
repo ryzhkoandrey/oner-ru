@@ -6,7 +6,7 @@
    &--active {
 
       .filters__toggler-title {
-         color: #6b59cc;
+         color: var(--color-secondary);
       }
    }
 
@@ -23,7 +23,7 @@
       &:hover {
 
          .filters__toggler-title {
-            color: #6b59cc;
+            color: var(--color-secondary);
          }
       }
    }
@@ -46,7 +46,7 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 1.22222;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
       transition: all .2s;
    }
 
@@ -80,7 +80,7 @@
 
       &:hover {
          color: #fff;
-         background: #6b59cc;
+         background: var(--color-secondary);
       }
    }
 }

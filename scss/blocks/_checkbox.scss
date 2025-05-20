@@ -4,12 +4,12 @@
 
    &:hover {
       .checkbox__fake {
-         border-color: #6b59cc;
+         border-color: var(--color-secondary);
       }
 
       .checkbox__text,
       .checkbox__count {
-         color: #6b59cc;
+         color: var(--color-secondary);
       }
    }
 
@@ -22,8 +22,8 @@
       clip: rect(0, 0, 0, 0);
 
       &:checked + .checkbox__fake {
-         border-color: #6b59cc;
-         background: #6b59cc;
+         border-color: var(--color-secondary);
+         background: var(--color-secondary);
 
          &::after {
             transform: scale(1);
@@ -60,7 +60,7 @@
       padding: 2px 0 0 0;
       font-size: 16px;
       line-height: 1.25;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
       transition: all 0.2s;
    }
 

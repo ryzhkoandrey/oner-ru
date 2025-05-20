@@ -24,7 +24,7 @@
       background: #fff;
 
       &:hover {
-         border-color: #6b59cc;
+         border-color: var(--color-secondary);
       }
 
       &--prev,
@@ -52,9 +52,9 @@
       }
 
       &--active {
-         border-color: #6b59cc;
+         border-color: var(--color-secondary);
          color: #fff;
-         background: #6b59cc;
+         background: var(--color-secondary);
       }
    }
 

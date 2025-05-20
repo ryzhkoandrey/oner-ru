@@ -30,12 +30,12 @@
       box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
 
       .catalog-product__title {
-         color: #6b59cc;
+         color: var(--color-secondary);
       }
 
       .catalog-product__btn {
          color: #fff;
-         background: #6b59cc;
+         background: var(--color-secondary);
       }
 
       .catalog-product__characteristics {
@@ -62,13 +62,13 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 1.22222;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    &__title {
       font-size: 16px;
       line-height: 1.25;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
       transition: all 0.2s;
    }
 
@@ -79,7 +79,7 @@
    }
 
    &__articul-number {
-      color: #6b59cc;
+      color: var(--color-secondary);
    }
 
    &__btn {
@@ -92,7 +92,7 @@
       font-size: 16px;
       line-height: 1.375;
       text-align: center;
-      color: #6b59cc;
+      color: var(--color-secondary);
       background: #efedfb;
       transition: all 0.2s;
    }
@@ -135,6 +135,6 @@
    &__characteristics-key {}
 
    &__characteristics-value {
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 }

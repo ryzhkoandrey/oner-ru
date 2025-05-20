@@ -11,10 +11,10 @@ const setAccordionHeight = (accordionBody) => {
 // filters accordion
 
 const filtersAccordion = document.querySelector('[data-filters-accordion]');
-const filtersAccordionToggler = filtersAccordion?.querySelector(
+const filtersAccordionToggler = filtersAccordion.querySelector(
    '[data-filters-accordion-toggler]'
 );
-const filtersAccordionBody = filtersAccordion?.querySelector(
+const filtersAccordionBody = filtersAccordion.querySelector(
    '[data-filters-accordion-body]'
 );
 
@@ -63,8 +63,6 @@ filterAccordions.forEach((accordion) => {
                'transitionend',
                function onEnd(e) {
                   if (e.propertyName === 'max-height') {
-                     accordionBody.removeEventListener('transitionend', onEnd);
-
                      if (
                         filtersAccordionBody &&
                         filtersAccordion.classList.contains('filters--active')
