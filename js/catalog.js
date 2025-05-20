@@ -58,14 +58,31 @@ filterAccordions.forEach((accordion) => {
 
          if (isOpen) {
             setAccordionHeight(accordionBody);
+
+            accordionBody.addEventListener(
+               'transitionend',
+               function onEnd(e) {
+                  if (e.propertyName === 'max-height') {
+                     accordionBody.removeEventListener('transitionend', onEnd);
+
+                     if (
+                        filtersAccordionBody &&
+                        filtersAccordion.classList.contains('filters--active')
+                     ) {
+                        setAccordionHeight(filtersAccordionBody);
+                     }
+                  }
+               },
+               { once: true }
+            );
          } else {
             accordionBody.removeAttribute('style');
-         }
-
-         if (filtersAccordionBody) {
-            setAccordionHeight(filtersAccordionBody);
-         } else {
-            console.error('error: filter accordion');
+            if (
+               filtersAccordionBody &&
+               filtersAccordion.classList.contains('filters--active')
+            ) {
+               setAccordionHeight(filtersAccordionBody);
+            }
          }
       });
    } else {
