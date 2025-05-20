@@ -8,6 +8,13 @@
    background: #fff;
    transition: box-shadow 0.2s;
 
+   @include laptop {
+
+      &:last-child {
+         display: none;
+      }
+   }
+
    &:hover {
       z-index: 1;
       border-color: #f4f5f6;
