@@ -65,7 +65,7 @@ if (
 // menu accordion (mobile only)
 
 const footerAccordions = document.querySelectorAll('[data-footer-accordion]');
-const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
+const isFooterMobile = () => window.matchMedia('(max-width: 767px)').matches;
 
 footerAccordions.forEach((accordion) => {
    const accordionToggler = accordion.querySelector(
@@ -75,7 +75,7 @@ footerAccordions.forEach((accordion) => {
 
    if (accordionToggler && accordionBody) {
       accordionToggler.addEventListener('click', () => {
-         if (isMobile()) {
+         if (isFooterMobile()) {
             const isOpen = accordion.classList.toggle('footer__menu--active');
 
             if (isOpen) {

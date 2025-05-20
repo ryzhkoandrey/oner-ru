@@ -28,7 +28,14 @@
       color: #1b1d1f;
    }
 
-   &__body {}
+   &__body {
+
+      @include tablet {
+         overflow: hidden;
+         max-height: 0;
+         transition: all 0.5s;
+      }
+   }
 
    &__footer {
       padding: 0 20px 20px;

@@ -1,8 +1,40 @@
 'use strict';
 
-// ---------- FILTER ---------- //
+// ---------- FILTERS ---------- //
 
-// accordion
+// filters accordion
+
+const filtersAccordions = document.querySelectorAll('[data-filters-accordion]');
+const isFiltersTablet = () => window.matchMedia('(max-width: 1024px)').matches;
+
+filtersAccordions.forEach((accordion) => {
+   const accordionToggler = accordion.querySelector(
+      '[data-filters-accordion-toggler]'
+   );
+   const accordionBody = accordion.querySelector('[data-filters-accordion-body]');
+
+   if (accordionToggler && accordionBody) {
+      if (accordion.classList.contains('filters--active')) {
+         accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+      }
+
+      accordionToggler.addEventListener('click', () => {
+         if (isFiltersTablet()) {
+            const isOpen = accordion.classList.toggle('filters--active');
+
+            if (isOpen) {
+               accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+            } else {
+               accordionBody.removeAttribute('style');
+            }
+         }
+      });
+   } else {
+      console.error('error: filters accordion');
+   }
+});
+
+// filter accordion
 
 const filterAccordions = document.querySelectorAll('[data-filter-accordion]');
 
