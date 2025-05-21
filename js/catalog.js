@@ -5,16 +5,17 @@
 const isFiltersTablet = () => window.matchMedia('(max-width: 1024px)').matches;
 
 const setAccordionHeight = (accordionBody) => {
+   if (!accordionBody) return;
    accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
 };
 
 // filters accordion
 
 const filtersAccordion = document.querySelector('[data-filters-accordion]');
-const filtersAccordionToggler = filtersAccordion.querySelector(
+const filtersAccordionToggler = filtersAccordion?.querySelector(
    '[data-filters-accordion-toggler]'
 );
-const filtersAccordionBody = filtersAccordion.querySelector(
+const filtersAccordionBody = filtersAccordion?.querySelector(
    '[data-filters-accordion-body]'
 );
 
@@ -61,7 +62,7 @@ filterAccordions.forEach((accordion) => {
 
             accordionBody.addEventListener(
                'transitionend',
-               function onEnd(e) {
+               (e) => {
                   if (e.propertyName === 'max-height') {
                      if (
                         filtersAccordionBody &&
