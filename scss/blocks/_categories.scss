@@ -71,10 +71,10 @@
          padding-left: 108px;
          display: flex;
          align-items: center;
-         background: #6d5998 url('../img/decor/categories-bg.webp') no-repeat center / cover;
+         background: #6d5998 url('../img/others/categories-bg.webp') no-repeat center / cover;
 
          @media (min-resolution: 192dpi) {
-            background-image: url('../img/decor/categories-bg@2x.webp');
+            background-image: url('../img/others/categories-bg@2x.webp');
          }
 
          @include mobile {
