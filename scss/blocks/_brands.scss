@@ -46,16 +46,16 @@
       font-size: 18px;
       line-height: 1.22222;
       text-transform: uppercase;
-      color: #6b59cc;
+      color: var(--color-secondary);
       background: #fff;
       transition: border-color .2s, background-color .2s;
 
       &:hover {
-         border-color: #6b59cc;
+         border-color: var(--color-secondary);
       }
 
       &--active {
-         border-color: #6b59cc;
+         border-color: var(--color-secondary);
          background-color: #efedfb;
          cursor: default;
       }
@@ -110,22 +110,23 @@
       transition: border-color .2s;
 
       &:hover {
-         border-color: #6b59cc;
+         border-color: var(--color-secondary);
 
          .brands__brand-title {
-            color: #6b59cc;
+            color: var(--color-secondary);
          }
       }
    }
 
    &__brand-image {
+      border-radius: 4px;
       flex-shrink: 0;
    }
 
    &__brand-title {
       font-size: 16px;
       line-height: 1.25;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
       transition: color .2s;
    }
 }
