@@ -4,15 +4,13 @@
 
 const brandsLetters = document.querySelectorAll('[data-brands-letter]');
 
-if (brandsLetters.length > 0) {
-   brandsLetters.forEach((letter) => {
-      letter.addEventListener('click', () => {
+brandsLetters.forEach((letter) => {
+   letter.addEventListener('click', () => {
+      if (!letter.classList.contains('brands__letter--active')) {
          brandsLetters.forEach((item) =>
             item.classList.remove('brands__letter--active')
          );
          letter.classList.add('brands__letter--active');
-      });
+      }
    });
-} else {
-   console.error('error: brandsLetters is empty');
-}
+});
