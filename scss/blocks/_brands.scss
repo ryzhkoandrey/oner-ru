@@ -39,11 +39,16 @@
       text-transform: uppercase;
       color: #6b59cc;
       background: #fff;
-      transition: all .2s;
+      transition: border-color .2s, background-color .2s;
+
+      &:hover {
+         border-color: #6b59cc;
+      }
 
       &--active {
          border-color: #6b59cc;
-         background: #efedfb;
+         background-color: #efedfb;
+         cursor: default;
       }
    }
 
@@ -63,12 +68,22 @@
 
    &__brand {
       border-radius: 4px;
+      border: 1px solid #fff;
       padding: 15px;
       display: flex;
       align-items: center;
       gap: 20px;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
       background: #fff;
+      transition: border-color .2s;
+
+      &:hover {
+         border-color: #6b59cc;
+
+         .brands__brand-title {
+            color: #6b59cc;
+         }
+      }
    }
 
    &__brand-image {}
@@ -77,5 +92,6 @@
       font-size: 16px;
       line-height: 1.25;
       color: #1b1d1f;
+      transition: color .2s;
    }
 }
