@@ -11,13 +11,11 @@ const setAccordionHeight = (accordionBody) => {
 
 // filters accordion
 
-const filtersAccordion = document.querySelector('[data-filters-accordion]');
+const filtersAccordion = document.querySelector('[data-filters]');
 const filtersAccordionToggler = filtersAccordion?.querySelector(
-   '[data-filters-accordion-toggler]'
+   '[data-filters-toggler]'
 );
-const filtersAccordionBody = filtersAccordion?.querySelector(
-   '[data-filters-accordion-body]'
-);
+const filtersAccordionBody = filtersAccordion?.querySelector('[data-filters-body]');
 
 if (filtersAccordion && filtersAccordionToggler && filtersAccordionBody) {
    if (filtersAccordion.classList.contains('filters--active')) {
@@ -41,13 +39,11 @@ if (filtersAccordion && filtersAccordionToggler && filtersAccordionBody) {
 
 // filter accordion
 
-const filterAccordions = document.querySelectorAll('[data-filter-accordion]');
+const filterAccordions = document.querySelectorAll('[data-filter]');
 
 filterAccordions.forEach((accordion) => {
-   const accordionToggler = accordion.querySelector(
-      '[data-filter-accordion-toggler]'
-   );
-   const accordionBody = accordion.querySelector('[data-filter-accordion-body]');
+   const accordionToggler = accordion.querySelector('[data-filter-toggler]');
+   const accordionBody = accordion.querySelector('[data-filter-body]');
 
    if (accordionToggler && accordionBody) {
       if (accordion.classList.contains('filter--active')) {
@@ -104,9 +100,7 @@ window.addEventListener('resize', () => {
    // filter accordion
    filterAccordions.forEach((accordion) => {
       if (accordion.classList.contains('filter--active')) {
-         const accordionBody = accordion.querySelector(
-            '[data-filter-accordion-body]'
-         );
+         const accordionBody = accordion.querySelector('[data-filter-body]');
          if (accordionBody) {
             setAccordionHeight(accordionBody);
          } else {
