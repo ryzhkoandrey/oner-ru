@@ -24,7 +24,7 @@ if (typeof Swiper !== 'undefined' && slider) {
       },
    });
 } else {
-   console.error('error: slider');
+   console.warn('error: slider');
 }
 
 // ---------- TOP-PRODUCTS ---------- //
@@ -40,7 +40,7 @@ if (typeof Swiper !== 'undefined' && topProducts) {
       freeMode: true,
    });
 } else {
-   console.error('error: top-products');
+   console.warn('error: top-products');
 }
 
 // ---------- TOP-CATEGORIES ---------- //
@@ -56,7 +56,7 @@ if (typeof Swiper !== 'undefined' && topCategories) {
       freeMode: true,
    });
 } else {
-   console.error('error: top-categories');
+   console.warn('error: top-categories');
 }
 
 // ---------- RECOMMENDED-PRODUCTS ---------- //
@@ -77,7 +77,7 @@ if (typeof Swiper !== 'undefined' && recommendedProducts) {
       },
    });
 } else {
-   console.error('error: recommended-products');
+   console.warn('error: recommended-products');
 }
 
 // ---------- SALE-PRODUCTS ---------- //
@@ -98,5 +98,5 @@ if (typeof Swiper !== 'undefined' && saleProducts) {
       },
    });
 } else {
-   console.error('error: sale-products');
+   console.warn('error: sale-products');
 }

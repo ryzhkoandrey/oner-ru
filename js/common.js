@@ -17,7 +17,7 @@ if (menu && menuOpen && menuClose) {
       document.body.classList.remove('no-scroll-adaptive');
    });
 } else {
-   console.error('error: mobile-menu');
+   console.warn('error: mobile-menu');
 }
 
 // ---------- ALL CATEGORIES ---------- //
@@ -57,7 +57,7 @@ if (
       e.stopPropagation();
    });
 } else {
-   console.error('error: all categories');
+   console.warn('error: all categories');
 }
 
 // ---------- FOOTER ---------- //
@@ -86,6 +86,6 @@ footerAccordions.forEach((accordion) => {
          }
       });
    } else {
-      console.error('error: footer menu accordion');
+      console.warn('error: footer menu accordion');
    }
 });

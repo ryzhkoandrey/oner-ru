@@ -34,7 +34,7 @@ if (filtersAccordion && filtersAccordionToggler && filtersAccordionBody) {
       }
    });
 } else {
-   console.error('error: filters accordion');
+   console.warn('error: filters accordion');
 }
 
 // filter accordion
@@ -81,7 +81,7 @@ filterAccordions.forEach((accordion) => {
          }
       });
    } else {
-      console.error('error: filter accordion');
+      console.warn('error: filter accordion');
    }
 });
 
@@ -94,7 +94,7 @@ window.addEventListener('resize', () => {
          setAccordionHeight(filtersAccordionBody);
       }
    } else {
-      console.error('error: filters accordion resize');
+      console.warn('error: filters accordion resize');
    }
 
    // filter accordion
@@ -104,7 +104,7 @@ window.addEventListener('resize', () => {
          if (accordionBody) {
             setAccordionHeight(accordionBody);
          } else {
-            console.error('error: filter accordion resize');
+            console.warn('error: filter accordion resize');
          }
       }
    });
