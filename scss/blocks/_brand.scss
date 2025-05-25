@@ -74,13 +74,24 @@
 
    }
 
+   &__table-row-inner {}
+
    &__table-group {}
 
 
    &__table-title {
+      font-size: 16px;
+      line-height: 1.25;
+      color: #7a7680;
 
-      &--mobile {}
+      &--mobile {
+         display: none;
+      }
    }
 
-   &__table-text {}
+   &__table-text {
+      font-size: 16px;
+      line-height: 1.25;
+      color: #1b1d1f;
+   }
 }
