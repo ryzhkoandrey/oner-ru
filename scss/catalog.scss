@@ -5,11 +5,11 @@
 
 // blocks
 
-@import 'blocks/catalog';
-
-@import 'blocks/filters';
-@import 'blocks/filter';
 @import 'blocks/checkbox';
+@import 'blocks/filter';
+@import 'blocks/filters';
 
 @import 'blocks/catalog-product';
 @import 'blocks/pagination';
+
+@import 'blocks/catalog';
