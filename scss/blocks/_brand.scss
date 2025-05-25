@@ -105,6 +105,7 @@
       @include mobile {
          border-radius: 4px;
          box-shadow: 0 2px 5px 0 rgba(38, 34, 45, 0.03);
+         padding: 20px;
       }
 
       &:hover {
@@ -141,8 +142,9 @@
       }
 
       @include mobile {
-         grid-template-columns: 1fr;
          border-bottom: none;
+         padding: 0;
+         grid-template-columns: 1fr;
       }
 
       &--heading {
@@ -151,7 +153,14 @@
       }
    }
 
-   &__table-group {}
+   &__table-group {
+
+      @include mobile {
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
+      }
+   }
 
 
    &__table-title {
@@ -172,5 +181,12 @@
       font-size: 16px;
       line-height: 1.25;
       color: #1b1d1f;
+   }
+
+   &__table-btn {
+
+      @include mobile {
+         margin: -5px 0 0;
+      }
    }
 }
