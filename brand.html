@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Магазин автозапчастей">
+
+   <title>Oner.ru</title>
+
+   <!-- css -->
+   <link rel="stylesheet" href="css/common.min.css">
+   <link rel="stylesheet" href="css/brand.min.css">
+
+   <!-- favicon -->
+   <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.webp" sizes="96x96">
+   <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+   <link rel="shortcut icon" href="img/favicon/favicon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.webp">
+   <meta name="apple-mobile-web-app-title" content="Oner.ru">
+   <link rel="manifest" href="img/favicon/site.webmanifest">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__top">
+         <div class="container">
+            <div class="header__top-inner">
+               <button class="header__menu-open" data-mobile-menu-open>
+                  <img class="header__menu-open-icon" src="img/icons/menu.svg" width="24" height="24" alt="Открыть меню">
+               </button>
+
+               <a class="header__logo" href="#">
+                  <img class="header__logo-img" src="img/icons/logo.svg" width="205" height="40" alt="Oner.ru">
+               </a>
+
+               <form class="header__search" action="#">
+                  <input class="header__search-input" type="text" name="search" placeholder="Введите номер запчасти или VIN">
+                  <button class="header__search-btn">
+                     <img class="header__search-btn-icon" src="img/icons/search.svg" width="20" height="20" alt="Поиск">
+                  </button>
+               </form>
+
+               <div class="header__top-col">
+                  <button class="header__location" aria-label="Локация">
+                     <img class="header__location-icon" src="img/icons/location.svg" width="24" height="24" alt="">
+                     <span class="header__location-text">Санкт-Петербург</span>
+                  </button>
+
+                  <a class="header__tel" href="tel:+73472294645">
+                     <img class="header__tel-icon" src="img/icons/tel.svg" width="24" height="24" alt="">
+                     <span class="header__tel-text">+7 (347) 229-46-45</span>
+                  </a>
+
+                  <button class="header__user" aria-label="Пользователь">
+                     <img class="header__user-icon" src="img/icons/user.svg" width="24" height="24" alt="">
+                     <span class="header__user-text">Вход</span>
+                     <span class="header__user-text">/</span>
+                     <span class="header__user-text">Регистрация</span>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="header__bottom">
+         <div class="container">
+            <div class="header__bottom-inner">
+               <button class="header__categories" data-header-categories-btn aria-label="Все категории">
+                  <img class="header__categories-icon" src="img/icons/categories.svg" width="20" height="20" alt="">
+                  <span class="header__categories-text">Все категории</span>
+               </button>
+
+               <nav class="header__menu">
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Запчасти для ТО</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Автомасла</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Оригинальные запчасти</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Неоригинальные запчасти</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Лампочки</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Аккумуляторы</a>
+                     </li>
+                  </ul>
+               </nav>
+
+               <a class="header__cart" href="#">
+                  <img class="header__cart-icon" src="img/icons/cart.svg" width="32" height="32" alt="">
+                  <span class="header__cart-text">Корзина</span>
+                  <span class="header__cart-count">5</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="main">
+      <section class="brand">
+         <div class="brand__top"></div>
+
+         <div class="brand__bottom"></div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__top">
+            <div class="footer__menu" data-footer-accordion>
+               <p class="footer__menu-title" data-footer-accordion-toggler>
+                  <span class="footer__menu-title-text">Меню компании</span>
+                  <img class="footer__menu-title-icon" src="img/icons/arrow-down-white.svg" width="24" height="24" loading="lazy" alt="">
+               </p>
+               <ul class="footer__menu-list" data-footer-accordion-body>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Что такое Oner</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Реквизиты и информация</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Новости</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Вакансии</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Поставщикам</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Контакты</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer__menu" data-footer-accordion>
+               <p class="footer__menu-title" data-footer-accordion-toggler>
+                  <span class="footer__menu-title-text">Каталоги</span>
+                  <img class="footer__menu-title-icon" src="img/icons/arrow-down-white.svg" width="24" height="24" loading="lazy" alt="">
+               </p>
+               <ul class="footer__menu-list" data-footer-accordion-body>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Оригинальные запчасти</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Неоригинальные запчасти</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Запчасти для ТО</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Автомасла</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Аккумуляторы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Распродажа</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer__menu" data-footer-accordion>
+               <p class="footer__menu-title" data-footer-accordion-toggler>
+                  <span class="footer__menu-title-text">Помощь</span>
+                  <img class="footer__menu-title-icon" src="img/icons/arrow-down-white.svg" width="24" height="24" loading="lazy" alt="">
+               </p>
+               <ul class="footer__menu-list" data-footer-accordion-body>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Часто задаваемые вопросы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Консультация Online</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Оплата заказа</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Доставка заказа</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Возврат товара</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Забыл пароль</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer__menu" data-footer-accordion>
+               <p class="footer__menu-title" data-footer-accordion-toggler>
+                  <span class="footer__menu-title-text">Товары и бренды</span>
+                  <img class="footer__menu-title-icon" src="img/icons/arrow-down-white.svg" width="24" height="24" loading="lazy" alt="">
+               </p>
+               <ul class="footer__menu-list" data-footer-accordion-body>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Список брендов</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Популярные товары</a>
+                  </li>
+                  <li class="footer__menu-item">
+                     <a class="footer__menu-link" href="#">Наличие на складах</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer__info">
+               <a class="footer__consultation" href="#">
+                  <img class="footer__consultation-icon" src="img/icons/consultation.svg" width="20" height="20" loading="lazy" alt="">
+                  <div class="footer__consultation-col">
+                     <p class="footer__consultation-title">Консультация Online</p>
+                     <p class="footer__consultation-text">Задавайте вопросы</p>
+                  </div>
+               </a>
+
+               <div class="footer__service">
+                  <p class="footer__service-text">Сервис работает в обычном режиме</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer__bottom">
+            <p class="footer__copyright">Copyright © ООО «Oner.ru» 2021. All rights reserved.</p>
+
+            <div class="footer__pay">
+               <p class="footer__pay-text">Принимаем к оплате</p>
+               <div class="footer__pay-cards">
+                  <a class="footer__pay-card" href="#">
+                     <img class="footer__pay-icon" src="img/icons/visa.svg" width="47" height="16" loading="lazy" alt="Visa">
+                  </a>
+                  <a class="footer__pay-card" href="#">
+                     <img class="footer__pay-icon" src="img/icons/mastercard.svg" width="27" height="16" loading="lazy" alt="Mastercard">
+                  </a>
+                  <a class="footer__pay-card" href="#">
+                     <img class="footer__pay-icon" src="img/icons/mir.svg" width="54" height="16" loading="lazy" alt="Мир">
+                  </a>
+               </div>
+            </div>
+
+            <div class="footer__links">
+               <a class="footer__links-link" href="#">Оферта</a>
+               <a class="footer__links-link" href="#">Конфиденциальность</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div class="mobile-menu" data-mobile-menu>
+      <div class="mobile-menu__row-1">
+         <div class="container">
+            <div class="mobile-menu__row-1-inner">
+               <button class="mobile-menu__close" data-mobile-menu-close>
+                  <img class="mobile-menu__close-icon" src="img/icons/close.svg" width="24" height="24" alt="Закрыть меню">
+               </button>
+
+               <button class="mobile-menu__user">
+                  <img class="mobile-menu__user-icon" src="img/icons/user.svg" width="24" height="24" alt="">
+                  <span class="mobile-menu__user-text">Вход</span>
+                  <span class="mobile-menu__user-text">/</span>
+                  <span class="mobile-menu__user-text">Регистрация</span>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="mobile-menu__row-2">
+         <div class="container">
+            <div class="mobile-menu__row-2-inner">
+               <button class="mobile-menu__location">
+                  <img class="mobile-menu__location-icon" src="img/icons/location.svg" width="24" height="24" alt="">
+                  <span class="mobile-menu__location-text">Санкт-Петербург</span>
+               </button>
+
+               <a class="mobile-menu__tel" href="tel:+73472294645">
+                  <img class="mobile-menu__tel-icon" src="img/icons/tel.svg" width="24" height="24" alt="">
+                  <span class="mobile-menu__tel-text">+7 (347) 229-46-45</span>
+               </a>
+
+               <a class="mobile-menu__cart" href="#">
+                  <img class="mobile-menu__cart-icon" src="img/icons/cart.svg" width="24" height="24" alt="">
+                  <span class="mobile-menu__cart-text">Корзина</span>
+                  <span class="mobile-menu__cart-count">5</span>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="mobile-menu__row-3">
+         <div class="container">
+            <ul class="mobile-menu__list">
+               <li class="mobile-menu__list-item">
+                  <a class="mobile-menu__list-link" href="#">Запчасти для ТО</a>
+               </li>
+               <li class="mobile-menu__list-item">
+                  <a class="mobile-menu__list-link" href="#">Автомасла</a>
+               </li>
+               <li class="mobile-menu__list-item">
+                  <a class="mobile-menu__list-link" href="#">Оригинальные запчасти</a>
+               </li>
+               <li class="mobile-menu__list-item">
+                  <a class="mobile-menu__list-link" href="#">Неоригинальные запчасти</a>
+               </li>
+               <li class="mobile-menu__list-item">
+                  <a class="mobile-menu__list-link" href="#">Лампочки</a>
+               </li>
+               <li class="mobile-menu__list-item">
+                  <a class="mobile-menu__list-link" href="#">Аккумуляторы</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <div class="all-categories" data-all-categories>
+      <div class="all-categories__container container" data-all-categories-container>
+         <div class="all-categories__inner" data-all-categories-inner>
+            <ul class="all-categories__list">
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-1.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Оригинальные запчасти</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-2.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Неоригинальные запчасти</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-3.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Запчасти ВАЗ, ГАЗ, КАМАЗ</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-4.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Кузовные запчасти</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-5.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Запчасти для ТО</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-6.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Автостёкла</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-7.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Автомасла</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-8.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Автохимия</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-9.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Диски</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-10.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Аккумуляторы</span>
+                  </a>
+               </li>
+
+               <li class="all-categories__item">
+                  <a class="all-categories__link" href="#">
+                     <img class="all-categories__icon" src="img/icons/all-categories-11.svg" width="32" height="32" alt="">
+                     <span class="all-categories__text">Автолампы</span>
+                  </a>
+               </li>
+            </ul>
+
+            <a class="all-categories__banner" href="#">
+               <img class="all-categories__banner-img" src="img/banners/all-categories.webp" srcset="img/banners/all-categories@2x.webp 2x" width="260" height="240" alt="Баннер">
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- js -->
+   <script src="js/common.js"></script>
+</body>
+
+</html>
+
+<button class="" data-toggler></button>
