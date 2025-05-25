@@ -11,8 +11,21 @@
    gap: 10px;
    background: #fff;
 
+   &:hover {
+      background: #6b59cc;
+
+      .btn-buy__icon {
+         color: #fff;
+      }
+
+      .btn-buy__text {
+         color: #fff;
+      }
+   }
+
    &__icon {
       color: #6b59cc;
+      transition: color .2s;
    }
 
    &__text {
@@ -20,5 +33,7 @@
       font-size: 16px;
       line-height: 1.375;
       color: #1b1d1f;
+      transform: translateY(1px);
+      transition: color .2s;
    }
 }
