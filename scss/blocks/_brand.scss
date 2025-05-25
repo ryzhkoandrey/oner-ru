@@ -60,6 +60,10 @@
 
    &__bottom {
       padding: 40px 0 60px;
+
+      @include tablet {
+         padding: 40px 0;
+      }
    }
 
    // table
@@ -82,6 +86,10 @@
 
       &--heading {
          border-bottom: 1px solid #e3e3e8;
+
+         &:hover {
+            background: #fff;
+         }
       }
    }
 
@@ -92,6 +100,14 @@
       grid-template-columns: 160px 1fr 260px 120px;
       align-items: center;
       gap: 15px;
+
+      @include laptop {
+         grid-template-columns: 160px 1fr 200px 120px;
+      }
+
+      @include tablet {
+         grid-template-columns: 110px 1fr 130px 120px;
+      }
 
       &--heading {
          padding: 15px 0;
