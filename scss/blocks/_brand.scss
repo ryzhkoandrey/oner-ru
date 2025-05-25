@@ -69,12 +69,24 @@
    }
 
    &__table-row {
+      padding: 0 30px;
 
-      &--heading {}
-
+      &--heading {
+         border-bottom: 1px solid #e3e3e8;
+      }
    }
 
-   &__table-row-inner {}
+   &__table-row-inner {
+      border-bottom: 1px solid #e3e3e8;
+      padding: 10px 0;
+      display: grid;
+      grid-template-columns: 160px 1fr 260px 120px;
+      gap: 15px;
+
+      &--heading {
+         border-bottom: none;
+      }
+   }
 
    &__table-group {}
 
