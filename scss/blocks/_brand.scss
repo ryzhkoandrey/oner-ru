@@ -7,30 +7,51 @@
       background: #fff;
    }
 
-   &__top-inner {
+   // info
+
+   &__info {
       display: flex;
       gap: 30px;
    }
 
-   &__top-left {
+   &__info-left {
       flex-shrink: 0;
    }
+
+   &__info-right {}
 
    &__image {
       border-radius: 4px;
    }
 
-   &__top-right {}
+   &__title {
+      margin: 0 0 10px;
+   }
 
-   &__title {}
+   &__country {
+      margin: 0 0 5px;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #1b1d1f;
+   }
 
-   &__country {}
+   &__site {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #1b1d1f;
+   }
 
-   &__site {}
+   &__site-link {
+      font-weight: 500;
+      color: #f11a22;
+   }
 
-   &__site-link {}
-
-   &__description {}
+   &__description {
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #55556d;
+   }
 
    // bottom
 
