@@ -1,5 +1,5 @@
 .btn-buy {
-   border: 2px solid #6b59cc;
+   border: 2px solid var(--color-secondary);
    border-radius: 8px;
    padding: 7px 18px 5px 18px;
    width: 120px;
@@ -11,7 +11,7 @@
    background: #fff;
 
    &:hover {
-      background: #6b59cc;
+      background: var(--color-secondary);
 
       .btn-buy__icon {
          color: #fff;
@@ -23,7 +23,7 @@
    }
 
    &__icon {
-      color: #6b59cc;
+      color: var(--color-secondary);
       transition: color .2s;
    }
 
@@ -31,7 +31,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 1.375;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
       transform: translateY(1px);
       transition: color .2s;
    }
