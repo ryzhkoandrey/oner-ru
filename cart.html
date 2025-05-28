@@ -30,7 +30,7 @@
                   <img class="header__menu-open-icon" src="img/icons/menu.svg" width="24" height="24" alt="Открыть меню">
                </button>
 
-               <a class="header__logo" href="#">
+               <a class="header__logo" href="/">
                   <img class="header__logo-img" src="img/icons/logo.svg" width="205" height="40" alt="Oner.ru">
                </a>
 
@@ -94,17 +94,37 @@
                   </ul>
                </nav>
 
-               <div class="header__cart header__cart--active">
+               <a class="header__cart" href="#" aria-current="page">
                   <img class="header__cart-icon" src="img/icons/cart.svg" width="32" height="32" alt="">
                   <span class="header__cart-text">Корзина</span>
                   <span class="header__cart-count">5</span>
-               </div>
+               </a>
             </div>
          </div>
       </div>
    </header>
 
-   <main class="main"></main>
+   <main class="main">
+      <section class="cart">
+         <div class="container">
+            <h1 class="title cart__title">Корзина</h1>
+
+            <div class="cart__body">
+               <div class="cart__body-left">
+                  <div class="cart-products">
+                     <div class="cart-products__header"></div>
+
+                     <div class="cart-products__item"></div>
+                  </div>
+               </div>
+
+               <div class="cart__body-right">
+                  <div class="cart-order">cart-order</div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
 
    <footer class="footer">
       <div class="container">
@@ -280,11 +300,11 @@
                   <span class="mobile-menu__tel-text">+7 (347) 229-46-45</span>
                </a>
 
-               <div class="mobile-menu__cart">
+               <a class="mobile-menu__cart" href="#" aria-current="page">
                   <img class="mobile-menu__cart-icon" src="img/icons/cart.svg" width="24" height="24" alt="">
                   <span class="mobile-menu__cart-text">Корзина</span>
                   <span class="mobile-menu__cart-count">5</span>
-               </div>
+               </a>
             </div>
          </div>
       </div>

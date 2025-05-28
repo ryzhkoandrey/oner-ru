@@ -77,15 +77,14 @@
       @include mobile {
          width: 120px;
       }
-   }
 
-   &__logo-img {}
-
-   a.header__logo {
       &:hover {
          opacity: 0.7;
       }
    }
+
+   &__logo-img {}
+
 
    // search
 
@@ -371,19 +370,6 @@
 
          .header__cart-count {
             background: var(--color-primary);
-         }
-      }
-
-      &--active {
-
-         &:hover {
-            .header__cart-text {
-               color: var(--color-text-primary);
-            }
-
-            .header__cart-count {
-               background: #fb6019;
-            }
          }
       }
    }
