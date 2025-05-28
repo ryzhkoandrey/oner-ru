@@ -373,6 +373,19 @@
             background: var(--color-primary);
          }
       }
+
+      &--active {
+
+         &:hover {
+            .header__cart-text {
+               color: var(--color-text-primary);
+            }
+
+            .header__cart-count {
+               background: #fb6019;
+            }
+         }
+      }
    }
 
    &__cart-icon {}
