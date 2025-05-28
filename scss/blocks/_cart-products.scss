@@ -4,17 +4,34 @@
    background: #fff;
 
    &__header {
+      padding: 15px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 15px;
    }
 
-   &__delete {}
+   &__delete {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #92979E;
 
-   &__delete-text {}
+      &:hover {
+         color: #f11a22;
+      }
+   }
 
-   &__delete-icon {}
+   &__delete-text {
+      transform: translateY(1px);
+      font-size: 16px;
+      line-height: 1.25;
+      color: inherit;
+   }
+
+   &__delete-icon {
+      color: inherit;
+   }
 
    &__item {}
 }

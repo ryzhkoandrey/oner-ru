@@ -1,21 +1,43 @@
 .cart-product {
+   padding: 20px;
    display: grid;
+   grid-template-columns: auto 80px 1fr 120px 120px 124px 20px;
+   align-items: center;
+   justify-items: center;
+   gap: 20px;
 
-   &__col {}
+   &__image-wrap {}
 
    &__image {}
 
+   &__info {}
+
    &__brand {}
 
-   &__title {}
+   &__title {
+
+      &:hover {
+         color: #6b59cc;
+      }
+   }
 
    &__articul {}
 
    &__delivery {}
 
+   &__counter {}
+
    &__price {}
 
-   &__delete {}
+   &__delete {
+      color: #92979E;
 
-   &__delete-icon {}
+      &:hover {
+         color: #f11a22;
+      }
+   }
+
+   &__delete-icon {
+      color: inherit;
+   }
 }
