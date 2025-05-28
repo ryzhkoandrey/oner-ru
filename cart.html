@@ -116,7 +116,7 @@
                      <!-- cart-products__header -->
                      <div class="cart-products__header">
                         <label class="checkbox">
-                           <input class="checkbox__input" type="checkbox" name="all-products" value="true" aria-label="Отметить/снять все товары">
+                           <input class="checkbox__input" type="checkbox" name="products" value="all" aria-label="All">
                            <span class="checkbox__fake"></span>
                            <span class="checkbox__text">Отметить/снять все товары</span>
                         </label>
@@ -129,8 +129,119 @@
                         </button>
                      </div>
 
-                     <!-- cart-products__item -->
-                     <div class="cart-products__item"></div>
+                     <!-- cart-product -->
+                     <div class="cart-product">
+                        <div class="cart-product__col">
+                           <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" name="products" value="Genesis" aria-label="Genesis">
+                              <span class="checkbox__fake"></span>
+                           </label>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <img class="cart-product__image" src="img/products/product-4-small.webp" srcset="img/products/product-4-small@2x.webp 2x" width="50" height="80" alt="Фото товара">
+                        </div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__brand"></p>
+                           <a class="cart-product__title" href="#"></a>
+                           <p class="cart-product__articul"></p>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__delivery"></p>
+                        </div>
+
+                        <div class="cart-product__col">counter</div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__price"></p>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <button class="cart-product__delete">
+                              <svg class="cart-product__delete-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M14.252 5.74805H5.74805V15.8359C5.74805 16.3426 6.15839 16.7529 6.66504 16.7529H13.334C13.8406 16.7529 14.252 16.3426 14.252 15.8359V5.74805ZM7.58203 14.1689V8.33301C7.58203 7.91889 7.91795 7.58316 8.33203 7.58301C8.74624 7.58301 9.08203 7.91879 9.08203 8.33301V14.1689C9.08184 14.583 8.74613 14.9189 8.33203 14.9189C7.91806 14.9188 7.58222 14.5829 7.58203 14.1689ZM10.917 14.1689V8.33301C10.917 7.91881 11.2528 7.58303 11.667 7.58301C12.0812 7.58301 12.417 7.91879 12.417 8.33301V14.1689C12.4168 14.583 12.0811 14.9189 11.667 14.9189C11.2529 14.9189 10.9172 14.583 10.917 14.1689ZM8.55469 3.25879C8.26883 3.30469 8.02048 3.48344 7.88672 3.74023L7.83008 3.875L7.70605 4.24805H12.2949L12.1709 3.875L12.1143 3.74023C11.9581 3.44039 11.6458 3.24676 11.2998 3.24707H8.7002L8.55469 3.25879ZM15.752 15.8359C15.752 17.171 14.6691 18.2529 13.334 18.2529H6.66504C5.32997 18.2529 4.24805 17.171 4.24805 15.8359V5.74805H3.74707C3.33286 5.74805 2.99707 5.41226 2.99707 4.99805C2.99711 4.58386 3.33288 4.24805 3.74707 4.24805H6.12402L6.40723 3.40039L6.47559 3.21875C6.85207 2.33207 7.72546 1.74684 8.70117 1.74707H11.2988V1.74805C12.2749 1.74732 13.1487 2.33164 13.5254 3.21875L13.5938 3.40039L13.5947 3.40137L13.876 4.24805H16.252C16.6661 4.24805 17.0019 4.58386 17.002 4.99805C17.002 5.41226 16.6662 5.74805 16.252 5.74805H15.752V15.8359Z" fill="currentColor" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+
+                     <!-- cart-product -->
+                     <div class="cart-product">
+                        <div class="cart-product__col">
+                           <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" name="products" value="Genesis" aria-label="Genesis">
+                              <span class="checkbox__fake"></span>
+                           </label>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <img class="cart-product__image" src="img/products/product-5-small.webp" srcset="img/products/product-5-small@2x.webp 2x" width="80" height="73" alt="Фото товара">
+                        </div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__brand"></p>
+                           <a class="cart-product__title" href="#"></a>
+                           <p class="cart-product__articul"></p>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__delivery"></p>
+                        </div>
+
+                        <div class="cart-product__col">counter</div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__price"></p>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <button class="cart-product__delete">
+                              <svg class="cart-product__delete-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M14.252 5.74805H5.74805V15.8359C5.74805 16.3426 6.15839 16.7529 6.66504 16.7529H13.334C13.8406 16.7529 14.252 16.3426 14.252 15.8359V5.74805ZM7.58203 14.1689V8.33301C7.58203 7.91889 7.91795 7.58316 8.33203 7.58301C8.74624 7.58301 9.08203 7.91879 9.08203 8.33301V14.1689C9.08184 14.583 8.74613 14.9189 8.33203 14.9189C7.91806 14.9188 7.58222 14.5829 7.58203 14.1689ZM10.917 14.1689V8.33301C10.917 7.91881 11.2528 7.58303 11.667 7.58301C12.0812 7.58301 12.417 7.91879 12.417 8.33301V14.1689C12.4168 14.583 12.0811 14.9189 11.667 14.9189C11.2529 14.9189 10.9172 14.583 10.917 14.1689ZM8.55469 3.25879C8.26883 3.30469 8.02048 3.48344 7.88672 3.74023L7.83008 3.875L7.70605 4.24805H12.2949L12.1709 3.875L12.1143 3.74023C11.9581 3.44039 11.6458 3.24676 11.2998 3.24707H8.7002L8.55469 3.25879ZM15.752 15.8359C15.752 17.171 14.6691 18.2529 13.334 18.2529H6.66504C5.32997 18.2529 4.24805 17.171 4.24805 15.8359V5.74805H3.74707C3.33286 5.74805 2.99707 5.41226 2.99707 4.99805C2.99711 4.58386 3.33288 4.24805 3.74707 4.24805H6.12402L6.40723 3.40039L6.47559 3.21875C6.85207 2.33207 7.72546 1.74684 8.70117 1.74707H11.2988V1.74805C12.2749 1.74732 13.1487 2.33164 13.5254 3.21875L13.5938 3.40039L13.5947 3.40137L13.876 4.24805H16.252C16.6661 4.24805 17.0019 4.58386 17.002 4.99805C17.002 5.41226 16.6662 5.74805 16.252 5.74805H15.752V15.8359Z" fill="currentColor" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+
+                     <!-- cart-product -->
+                     <div class="cart-product">
+                        <div class="cart-product__col">
+                           <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" name="products" value="Genesis" aria-label="Genesis">
+                              <span class="checkbox__fake"></span>
+                           </label>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <img class="cart-product__image" src="img/products/product-6-small.webp" srcset="img/products/product-6-small@2x.webp 2x" width="80" height="80" alt="Фото товара">
+                        </div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__brand"></p>
+                           <a class="cart-product__title" href="#"></a>
+                           <p class="cart-product__articul"></p>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__delivery"></p>
+                        </div>
+
+                        <div class="cart-product__col">counter</div>
+
+                        <div class="cart-product__col">
+                           <p class="cart-product__price"></p>
+                        </div>
+
+                        <div class="cart-product__col">
+                           <button class="cart-product__delete">
+                              <svg class="cart-product__delete-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M14.252 5.74805H5.74805V15.8359C5.74805 16.3426 6.15839 16.7529 6.66504 16.7529H13.334C13.8406 16.7529 14.252 16.3426 14.252 15.8359V5.74805ZM7.58203 14.1689V8.33301C7.58203 7.91889 7.91795 7.58316 8.33203 7.58301C8.74624 7.58301 9.08203 7.91879 9.08203 8.33301V14.1689C9.08184 14.583 8.74613 14.9189 8.33203 14.9189C7.91806 14.9188 7.58222 14.5829 7.58203 14.1689ZM10.917 14.1689V8.33301C10.917 7.91881 11.2528 7.58303 11.667 7.58301C12.0812 7.58301 12.417 7.91879 12.417 8.33301V14.1689C12.4168 14.583 12.0811 14.9189 11.667 14.9189C11.2529 14.9189 10.9172 14.583 10.917 14.1689ZM8.55469 3.25879C8.26883 3.30469 8.02048 3.48344 7.88672 3.74023L7.83008 3.875L7.70605 4.24805H12.2949L12.1709 3.875L12.1143 3.74023C11.9581 3.44039 11.6458 3.24676 11.2998 3.24707H8.7002L8.55469 3.25879ZM15.752 15.8359C15.752 17.171 14.6691 18.2529 13.334 18.2529H6.66504C5.32997 18.2529 4.24805 17.171 4.24805 15.8359V5.74805H3.74707C3.33286 5.74805 2.99707 5.41226 2.99707 4.99805C2.99711 4.58386 3.33288 4.24805 3.74707 4.24805H6.12402L6.40723 3.40039L6.47559 3.21875C6.85207 2.33207 7.72546 1.74684 8.70117 1.74707H11.2988V1.74805C12.2749 1.74732 13.1487 2.33164 13.5254 3.21875L13.5938 3.40039L13.5947 3.40137L13.876 4.24805H16.252C16.6661 4.24805 17.0019 4.58386 17.002 4.99805C17.002 5.41226 16.6662 5.74805 16.252 5.74805H15.752V15.8359Z" fill="currentColor" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
                   </div>
                </div>
 
