@@ -54,6 +54,11 @@
          background: url('../img/icons/check.svg') no-repeat center;
          transition: all 0.2s;
       }
+
+      &--gray {
+         border: 1px solid #e3e3e8;
+         background: #f4f5f6;
+      }
    }
 
    &__text {
