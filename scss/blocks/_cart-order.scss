@@ -32,7 +32,15 @@
 
    &__total-text {}
 
-   &__btn {}
+   &__btn {
+      padding: 16px 20px;
+      width: 100%;
+      min-height: 54px;
+
+      &:hover {
+         background: var(--color-primary);
+      }
+   }
 
    &__text {}
 }
