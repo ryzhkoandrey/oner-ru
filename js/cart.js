@@ -2,10 +2,12 @@
 
 // ---------- CART PRODUCT COUNTER ---------- //
 
-document.querySelectorAll('[data-counter]').forEach((wrapper) => {
-   const input = wrapper.querySelector('[data-counter-input]');
-   const btnPlus = wrapper.querySelector('[data-counter-up]');
-   const btnMinus = wrapper.querySelector('[data-counter-down]');
+const counters = document.querySelectorAll('[data-counter]');
+
+counters.forEach((counter) => {
+   const btnMinus = counter.querySelector('[data-counter-minus]');
+   const btnPlus = counter.querySelector('[data-counter-plus]');
+   const input = counter.querySelector('[data-counter-input]');
 
    const getNum = (val) => parseFloat(val) || 0;
    const getStep = () => parseFloat(input.step) || 1;
@@ -41,7 +43,6 @@ document.querySelectorAll('[data-counter]').forEach((wrapper) => {
       updateButtonsState();
    });
 
-   // Стартовое состояние
    sanitizeValue();
    updateButtonsState();
 });

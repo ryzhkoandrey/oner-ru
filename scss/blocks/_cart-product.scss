@@ -6,11 +6,15 @@
    justify-items: center;
    gap: 20px;
 
+   // image
+
    &__image {
       max-width: 80px;
       max-height: 80px;
       object-fit: contain;
    }
+
+   // info
 
    &__info {
       width: 100%;
@@ -50,7 +54,31 @@
       color: #1b1d1f;
    }
 
+   // counter
+
    &__counter {}
+
+   &__counter-controls {}
+
+   &__counter-plus {}
+
+   &__counter-icon {}
+
+   &__counter-input {
+
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+      }
+   }
+
+   &__counter-minus {}
+
+   &__counter-text {}
+
+   // price
 
    &__price {
       font-weight: 600;
@@ -59,6 +87,8 @@
       text-align: center;
       color: #1b1d1f;
    }
+
+   // delete
 
    &__delete {
       color: #92979E;
