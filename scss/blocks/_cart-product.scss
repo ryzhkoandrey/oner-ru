@@ -77,6 +77,7 @@
 
    &__counter-btn {
       border-radius: 24px;
+      border: 2px solid transparent;
       width: 30px;
       height: 30px;
       flex-shrink: 0;
@@ -85,17 +86,32 @@
       align-items: center;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.07);
       background: #fff;
+
+      &:hover {
+         border-color: #6b59cc;
+      }
+
+      &:disabled {
+         border-color: transparent;
+         cursor: default;
+
+         .cart-product__counter-btn-icon {
+            opacity: 0.3;
+         }
+      }
    }
 
    &__counter-btn-icon {}
 
    &__counter-input {
+      transform: translateY(2px);
       width: 100%;
       font-weight: 500;
       font-size: 18px;
       line-height: 1.22222;
       text-align: center;
       color: #1b1d1f;
+      transition: color .2s;
 
       -moz-appearance: textfield;
 

@@ -110,6 +110,7 @@
             <h1 class="title cart__title">Корзина</h1>
 
             <div class="cart__body">
+               <!-- cart-products -->
                <div class="cart-products">
                   <div class="cart-products__header">
                      <label class="checkbox">
@@ -247,7 +248,42 @@
                   </div>
                </div>
 
-               <div class="cart-order">cart-order</div>
+               <!-- cart-order -->
+               <form class="cart-order" action="#">
+                  <div class="cart-order__header">
+                     <h2 class="cart-order__title">Ваш заказ</h2>
+                  </div>
+
+                  <div class="cart-order__body">
+                     <div class="cart-order__products">
+                        <span class="cart-order__products-text">Товары</span>
+                        <span class="cart-order__products-text">6</span>
+                     </div>
+
+                     <label class="cart-order__promocode">
+                        <input class="cart-order__promocode-input" type="text" name="promocode">
+                        <span class="cart-order__promocode-title">Промокод</span>
+                        <button class="cart-order__promocode-btn">
+                           <svg class="cart-order__promocode-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15.8337 9.99967H4.16699" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11.667 14.1667L15.8337 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11.667 5.83301L15.8337 9.99967" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </label>
+                  </div>
+
+                  <div class="cart-order__footer">
+                     <div class="cart-order__total">
+                        <span class="cart-order__total-text">Итого</span>
+                        <span class="cart-order__total-text">23 870 ₽</span>
+                     </div>
+
+                     <button class="cart-order__btn btn" type="submit">Оформление заказа</button>
+
+                     <p class="cart-order__text">Цена зависит от типа клиента. После регистрации возможна ее корректировка.</p>
+                  </div>
+               </form>
             </div>
          </div>
       </section>
