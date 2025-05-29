@@ -1,6 +1,27 @@
 'use strict';
 
-// ---------- CART PRODUCT COUNTER ---------- //
+// ---------- CHECKBOXES ---------- //
+
+const selectAll = document.querySelector('[data-select-all]');
+const checkboxes = document.querySelectorAll('[data-checkbox]');
+
+if (selectAll) {
+   selectAll.addEventListener('change', () => {
+      checkboxes.forEach((checkbox) => {
+         checkbox.checked = selectAll.checked;
+      });
+   });
+
+   checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', () => {
+         selectAll.checked = Array.from(checkboxes).every((cb) => cb.checked);
+      });
+   });
+} else {
+   console.warn('error: selectAll');
+}
+
+// ---------- COUNTERS ---------- //
 
 const counters = document.querySelectorAll('[data-counter]');
 
