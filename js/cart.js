@@ -1,6 +1,6 @@
 'use strict';
 
-// ---------- CHECKBOXES ---------- //
+// ---------- CHECKBOX ---------- //
 
 const selectAll = document.querySelector('[data-select-all]');
 const checkboxes = document.querySelectorAll('[data-checkbox]');
@@ -21,7 +21,7 @@ if (selectAll) {
    console.warn('error: selectAll');
 }
 
-// ---------- COUNTERS ---------- //
+// ---------- COUNTER ---------- //
 
 const counters = document.querySelectorAll('[data-counter]');
 
@@ -75,33 +75,21 @@ const inputs = document.querySelectorAll('[data-floating-label-input]');
 inputs.forEach((input) => {
    const parent = input.closest('[data-floating-label]');
 
-   // function check() {
-   //    if (input.value) {
-   //       parent.classList.add('cart-order__promocode--active');
-   //    } else {
-   //       parent.classList.remove('cart-order__promocode--active');
-   //    }
-   // }
-
-   // input.addEventListener('focus', () => {
-   //    parent.classList.add('cart-order__promocode--active');
-   // });
-   // input.addEventListener('input', check);
-   // input.addEventListener('blur', check);
-
-   // check();
-
-   function updateLabel() {
-      if (input === document.activeElement || input.value) {
-         parent.classList.add('cart-order__promocode--active');
-      } else {
-         parent.classList.remove('cart-order__promocode--active');
+   if (parent) {
+      function updateLabel() {
+         if (input === document.activeElement || input.value) {
+            parent.classList.add('cart-order__promocode--active');
+         } else {
+            parent.classList.remove('cart-order__promocode--active');
+         }
       }
+
+      input.addEventListener('focus', updateLabel);
+      input.addEventListener('input', updateLabel);
+      input.addEventListener('blur', updateLabel);
+
+      updateLabel();
+   } else {
+      console.warn('error: inputs');
    }
-
-   input.addEventListener('focus', updateLabel);
-   input.addEventListener('blur', updateLabel);
-   input.addEventListener('input', updateLabel);
-
-   updateLabel();
 });
