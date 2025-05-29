@@ -95,9 +95,20 @@
       align-items: center;
       justify-content: center;
       background: #f4f5f6;
+
+      &:hover {
+         background: #efedfb;
+
+         .cart-order__promocode-btn-icon {
+            color: #6B59CC;
+         }
+
+      }
    }
 
-   &__promocode-btn-icon {}
+   &__promocode-btn-icon {
+      color: #55556D;
+   }
 
    // footer
 
