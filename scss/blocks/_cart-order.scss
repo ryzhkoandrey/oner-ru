@@ -1,36 +1,126 @@
 .cart-order {
+   border: 1px solid #f4f5f6;
+   border-radius: 6px;
+   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+   background: #fff;
 
    // header
 
-   &__header {}
+   &__header {
+      border-bottom: 1px solid #e3e3e8;
+      padding: 20px 30px 15px;
+   }
 
-   &__title {}
+   &__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.25;
+      color: #1b1d1f;
+   }
 
    // body
 
-   &__body {}
+   &__body {
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
 
-   &__products {}
+   &__products {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
 
-   &__products-text {}
+   &__products-text {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #1b1d1f;
+   }
 
-   &__promocode {}
+   // promocode
 
-   &__promocode-input {}
+   &__promocode {
+      position: relative;
+      border: 1px solid #dedee2;
+      border-radius: 6px;
+      padding: 6px 6px 6px 20px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
 
-   &__promocode-title {}
+      &--active {
 
-   &__promocode-btn {}
+         .cart-order__promocode-label {
+            top: -8px;
+            left: 15px;
+            padding: 0px 5px;
+            font-size: 14px;
+            line-height: 1.28571;
+            background: #fff;
+         }
+      }
+   }
+
+   &__promocode-input {
+      width: 100%;
+      height: 100%;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #1b1d1f;
+
+
+   }
+
+   &__promocode-label {
+      position: absolute;
+      top: 13px;
+      left: 20px;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #55556d;
+      transition: all .2s;
+      pointer-events: none;
+   }
+
+   &__promocode-btn {
+      flex-shrink: 0;
+      border-radius: 6px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f4f5f6;
+   }
 
    &__promocode-btn-icon {}
 
    // footer
 
-   &__footer {}
+   &__footer {
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
 
-   &__total {}
+   &__total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
 
-   &__total-text {}
+   &__total-text {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #1b1d1f;
+   }
 
    &__btn {
       padding: 16px 20px;
@@ -42,5 +132,9 @@
       }
    }
 
-   &__text {}
+   &__text {
+      font-size: 14px;
+      line-height: 1.28571;
+      color: #7a7680;
+   }
 }
