@@ -143,7 +143,11 @@
 
                         <p class="cart-product__delivery">5 дней</p>
 
-                        <div class="cart-product__counter">counter</div>
+                        <div class="cart-product__counter" data-counter>
+                           <button type="button" type="button" data-counter-down>-</button>
+                           <input type="number" data-counter-input name="count-1" value="1" min="1" max="99" step="1">
+                           <button type="button" type="button" data-counter-up>+</button>
+                        </div>
 
                         <p class="cart-product__price">2 060 ₽</p>
 
@@ -520,6 +524,7 @@
 
    <!-- js -->
    <script src="js/common.js"></script>
+   <script src="js/cart.js"></script>
 </body>
 
 </html>
