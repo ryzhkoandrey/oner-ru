@@ -9,6 +9,20 @@
       align-items: center;
       justify-content: space-between;
       gap: 15px;
+
+      @include mobile {
+         padding: 15px 10px 15px 15px;
+         gap: 10px;
+      }
+   }
+
+   &__checkbox-text {
+
+      @include mobile {
+         transform: translateY(1px);
+         font-size: 14px;
+         line-height: 1.28571;
+      }
    }
 
    &__delete {
@@ -27,6 +41,12 @@
       font-size: 16px;
       line-height: 1.25;
       color: inherit;
+
+      @include mobile {
+         transform: translateY(2px);
+         font-size: 14px;
+         line-height: 1.28571;
+      }
    }
 
    &__delete-icon {

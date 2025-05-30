@@ -2,7 +2,7 @@
    padding: 30px 0 40px;
 
    @include tablet {
-      padding: 20px 0 40px;
+      padding: 23px 0 40px;
    }
 
    &__title {
@@ -21,6 +21,10 @@
 
       @include tablet {
          grid-template-columns: 1fr;
+      }
+
+      @include mobile {
+         margin: 0 calc(var(--container-padding) * -1);
       }
    }
 }
