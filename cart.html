@@ -114,7 +114,7 @@
                <div class="cart-products">
                   <div class="cart-products__header">
                      <label class="checkbox">
-                        <input class="checkbox__input" type="checkbox" name="products" value="all" aria-label="all" data-select-all>
+                        <input class="checkbox__input" type="checkbox" name="products" value="all" aria-label="Отметить/снять все товары" data-select-all>
                         <span class="checkbox__fake checkbox__fake--gray"></span>
                         <span class="checkbox__text">Отметить/снять все товары</span>
                      </label>
@@ -149,7 +149,7 @@
                               <button class="cart-product__counter-btn" type="button" data-counter-minus>
                                  <img class="cart-product__counter-btn-icon" src="img/icons/minus.svg" width="20" height="20" alt="Увеличить">
                               </button>
-                              <input class="cart-product__counter-input" type="number" data-counter-input name="count-1" value="1" min="1" max="100" step="1">
+                              <input class="cart-product__counter-input" type="number" name="count-1" value="1" min="1" max="100" step="1" data-counter-input>
                               <button class="cart-product__counter-btn" type="button" data-counter-plus>
                                  <img class="cart-product__counter-btn-icon" src="img/icons/plus.svg" width="20" height="20" alt="Уменьшить">
                               </button>
@@ -189,7 +189,7 @@
                               <button class="cart-product__counter-btn" type="button" data-counter-minus>
                                  <img class="cart-product__counter-btn-icon" src="img/icons/minus.svg" width="20" height="20" alt="Увеличить">
                               </button>
-                              <input class="cart-product__counter-input" type="number" data-counter-input name="count-2" value="2" min="1" max="100" step="1">
+                              <input class="cart-product__counter-input" type="number" name="count-2" value="2" min="1" max="100" step="1" data-counter-input>
                               <button class="cart-product__counter-btn" type="button" data-counter-plus>
                                  <img class="cart-product__counter-btn-icon" src="img/icons/plus.svg" width="20" height="20" alt="Уменьшить">
                               </button>
@@ -229,7 +229,7 @@
                               <button class="cart-product__counter-btn" type="button" data-counter-minus>
                                  <img class="cart-product__counter-btn-icon" src="img/icons/minus.svg" width="20" height="20" alt="Увеличить">
                               </button>
-                              <input class="cart-product__counter-input" type="number" data-counter-input name="count-3" value="3" min="1" max="100" step="1">
+                              <input class="cart-product__counter-input" type="number" name="count-3" value="3" min="1" max="100" step="1" data-counter-input>
                               <button class="cart-product__counter-btn" type="button" data-counter-plus>
                                  <img class="cart-product__counter-btn-icon" src="img/icons/plus.svg" width="20" height="20" alt="Уменьшить">
                               </button>
@@ -260,9 +260,9 @@
                         <span class="cart-order__products-text">6</span>
                      </div>
 
-                     <label class="cart-order__promocode" data-floating-label>
-                        <input class="cart-order__promocode-input" type="text" name="promocode" data-floating-label-input>
-                        <span class="cart-order__promocode-label">Промокод</span>
+                     <div class="cart-order__promocode" data-floating-label>
+                        <input class="cart-order__promocode-input" type="text" id="promocode" name="promocode" data-floating-label-input>
+                        <label class="cart-order__promocode-label" for="promocode">Промокод</label>
                         <button class="cart-order__promocode-btn">
                            <svg class="cart-order__promocode-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M15.8337 9.99967H4.16699" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -270,7 +270,7 @@
                               <path d="M11.667 5.83301L15.8337 9.99967" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                            </svg>
                         </button>
-                     </label>
+                     </div>
                   </div>
 
                   <div class="cart-order__footer">

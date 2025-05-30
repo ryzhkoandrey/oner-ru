@@ -75,29 +75,25 @@ const inputs = document.querySelectorAll('[data-floating-label-input]');
 inputs.forEach((input) => {
    const parent = input.closest('[data-floating-label]');
 
-   if (parent) {
-      function updateLabel() {
-         if (input === document.activeElement || input.value) {
-            parent.classList.add('cart-order__promocode--filled');
-         } else {
-            parent.classList.remove('cart-order__promocode--filled');
-         }
+   function updateLabel() {
+      if (input === document.activeElement || input.value) {
+         parent.classList.add('cart-order__promocode--filled');
+      } else {
+         parent.classList.remove('cart-order__promocode--filled');
       }
-
-      input.addEventListener('focus', () => {
-         parent.classList.add('cart-order__promocode--active');
-         updateLabel();
-      });
-
-      input.addEventListener('blur', () => {
-         parent.classList.remove('cart-order__promocode--active');
-         updateLabel();
-      });
-
-      input.addEventListener('input', updateLabel);
-
-      updateLabel();
-   } else {
-      console.warn('error: inputs');
    }
+
+   input.addEventListener('focus', () => {
+      parent.classList.add('cart-order__promocode--active');
+      updateLabel();
+   });
+
+   input.addEventListener('blur', () => {
+      parent.classList.remove('cart-order__promocode--active');
+      updateLabel();
+   });
+
+   input.addEventListener('input', updateLabel);
+
+   updateLabel();
 });
