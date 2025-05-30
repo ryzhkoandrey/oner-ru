@@ -153,5 +153,9 @@
       font-size: 14px;
       line-height: 1.28571;
       color: #7a7680;
+
+      @include tablet {
+         text-align: center;
+      }
    }
 }

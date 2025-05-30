@@ -1,6 +1,10 @@
 .cart {
    padding: 30px 0 40px;
 
+   @include tablet {
+      padding: 20px 0 40px;
+   }
+
    &__title {
       margin: 0 0 20px;
    }
@@ -10,5 +14,9 @@
       grid-template-columns: 1fr 302px;
       align-items: flex-start;
       gap: 20px;
+
+      @include tablet {
+         grid-template-columns: 1fr;
+      }
    }
 }
