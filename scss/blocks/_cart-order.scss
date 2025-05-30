@@ -53,8 +53,15 @@
       align-items: center;
       justify-content: space-between;
       gap: 15px;
+      transition: border-color .2s;
+      cursor: default;
 
+      &:hover,
       &--active {
+         border-color: var(--color-primary);
+      }
+
+      &--filled {
 
          .cart-order__promocode-label {
             top: -8px;

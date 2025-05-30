@@ -78,15 +78,23 @@ inputs.forEach((input) => {
    if (parent) {
       function updateLabel() {
          if (input === document.activeElement || input.value) {
-            parent.classList.add('cart-order__promocode--active');
+            parent.classList.add('cart-order__promocode--filled');
          } else {
-            parent.classList.remove('cart-order__promocode--active');
+            parent.classList.remove('cart-order__promocode--filled');
          }
       }
 
-      input.addEventListener('focus', updateLabel);
+      input.addEventListener('focus', () => {
+         parent.classList.add('cart-order__promocode--active');
+         updateLabel();
+      });
+
+      input.addEventListener('blur', () => {
+         parent.classList.remove('cart-order__promocode--active');
+         updateLabel();
+      });
+
       input.addEventListener('input', updateLabel);
-      input.addEventListener('blur', updateLabel);
 
       updateLabel();
    } else {
