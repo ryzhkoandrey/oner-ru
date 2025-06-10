@@ -22,9 +22,5 @@
       @include tablet {
          grid-template-columns: 1fr;
       }
-
-      @include mobile {
-         margin: 0 calc(var(--container-padding) * -1);
-      }
    }
 }

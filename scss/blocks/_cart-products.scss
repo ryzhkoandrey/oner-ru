@@ -3,6 +3,10 @@
    border-radius: 6px;
    background: #fff;
 
+   @include mobile {
+      margin: 0 calc(var(--container-padding) * -1);
+   }
+
    &__header {
       padding: 15px 20px;
       display: flex;
@@ -13,6 +17,11 @@
       @include mobile {
          padding: 15px 10px 15px 15px;
          gap: 10px;
+      }
+
+      @include mobile-extra-small {
+         flex-direction: column;
+         align-items: flex-start;
       }
    }
 
@@ -30,6 +39,10 @@
       align-items: center;
       gap: 10px;
       color: #92979E;
+
+      @include mobile-extra-small {
+         flex-direction: row-reverse;
+      }
 
       &:hover {
          color: #f11a22;

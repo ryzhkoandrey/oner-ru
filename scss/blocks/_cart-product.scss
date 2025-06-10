@@ -23,6 +23,10 @@
       gap: 5px 10px;
    }
 
+   @include mobile-extra-small {
+      grid-template-columns: auto 98px 120px 1fr;
+   }
+
    // image
 
    &__image {
@@ -176,6 +180,13 @@
          grid-row-start: 2;
          justify-self: end;
       }
+
+      @include mobile-extra-small {
+         padding: 15px 0 0;
+         grid-column-start: 3;
+         grid-row-start: 3;
+         justify-self: center;
+      }
    }
 
    // delete
@@ -185,6 +196,12 @@
 
       @include mobile {
          align-self: start;
+      }
+
+      @include mobile-extra-small {
+         transform: translateY(-3px);
+         grid-row-start: 2;
+         align-self: center;
       }
 
       &:hover {
