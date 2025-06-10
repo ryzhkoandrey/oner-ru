@@ -74,6 +74,7 @@ const inputs = document.querySelectorAll('[data-floating-label-input]');
 
 inputs.forEach((input) => {
    const parent = input.closest('[data-floating-label]');
+   if (!parent) return;
 
    function updateLabel() {
       if (input === document.activeElement || input.value) {

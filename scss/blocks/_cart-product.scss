@@ -53,16 +53,16 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 1.375;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    &__title {
       font-size: 16px;
       line-height: 1.25;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
 
       &:hover {
-         color: #6b59cc;
+         color: var(--color-secondary);
       }
    }
 
@@ -76,7 +76,7 @@
       font-size: 16px;
       line-height: 1.25;
       text-align: center;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
 
       @include mobile {
          grid-column-start: 2;
@@ -124,7 +124,7 @@
       background: #fff;
 
       &:hover {
-         border-color: #6b59cc;
+         border-color: var(--color-secondary);
       }
 
       &:disabled {
@@ -146,7 +146,7 @@
       font-size: 18px;
       line-height: 1.22222;
       text-align: center;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
       transition: color .2s;
 
       -moz-appearance: textfield;
@@ -172,7 +172,7 @@
       font-size: 18px;
       line-height: 1.22222;
       text-align: center;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
 
       @include mobile {
          padding: 0 4px 0 0;

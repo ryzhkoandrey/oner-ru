@@ -15,7 +15,7 @@
       font-weight: 500;
       font-size: 24px;
       line-height: 1.25;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    // body
@@ -38,7 +38,7 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 1.5;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    // promocode
@@ -79,7 +79,7 @@
       font-size: 18px;
       line-height: 1.22222;
       text-transform: uppercase;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    &__promocode-label {
@@ -107,7 +107,7 @@
          background: #efedfb;
 
          .cart-order__promocode-btn-icon {
-            color: #6B59CC;
+            color: var(--color-secondary);
          }
 
       }
@@ -136,7 +136,7 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 1.5;
-      color: #1b1d1f;
+      color: var(--color-text-primary);
    }
 
    &__btn {
